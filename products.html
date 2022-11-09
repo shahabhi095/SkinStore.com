@@ -8,26 +8,55 @@
     <link rel="stylesheet" href="products.css">
 </head>
 <body>
+    <div id="navbar"></div>
     <div id="conatiner">
         <div id="refine">
 
         </div>
         <div id="product">
             <h1>Shop SkinCeuticals Skincare</h1>
-            <p id="total_items"></p>
-            <div id="brief_imtro">
+            <p id="total_items"><span>result</span></p>
+            <div id="brief_intro">
                 <p>The SkinCeuticals story began with Dr. Sheldon Pinnell’s groundbreaking research on vitamin C in 1992, long before the
                 company was established in 1997. In the years since, SkinCeuticals has remained committed to using evidence-based
                 research to develop new antioxidant and cosmeceutical formulations, and has grown to become the #1 Medical Skincare
-                Brand in the U.S."[1]</p>
-                <p>At SkinCeuticals, the formulation philosophy is driven by the physician-based skincare prescription for optimal skin
+                Brand in the U.S."[1]<br><span id="dots">...</span><span id="more">
+                At SkinCeuticals, the formulation philosophy is driven by the physician-based skincare prescription for optimal skin
                 health: prevent future signs of aging with antioxidants, correct visible concerns advanced corrective products and
                 protect healthy skin with sunscreen. An effective skincare regimen must contain these three fundamental elements before
-                being further customized and tailored for every unique skin need.</p>
-                <p>1 2020 Kline Professional Skincare: U.S. Market Analysis and Opportunities</p>
+                being further customized and tailored for every unique skin need. <br>
+                1 2020 Kline Professional Skincare: U.S. Market Analysis and Opportunities</span></p>
+                <button  id="myBtn">Read more</button>
+            </div>
+            <div
+             id="categories">
+                <p>SkinCeuticals Skin Treatments</p>
+                <p>SkinCeuticals Cleansers</p>
+                <p>SkinCeuticals Face Masks</p>
+                <p>SkinCeuticals Antioxidants</p>
+                <p>SkinCeuticals Moisturizers</p>
+                <p>SkinCeuticals Body Care</p>
+                <p>SkinCeuticals Retinol</p>
+            </div>
+            <div id="sortBy">
+                <label for="">Sort By:</label>
+                <select name="" id="select">
+                  
+                    <option value="">Newews Arrivals</option>
+                    <option value="Popularity"> Popularity</option>
+                    <option value="Lowtohigh">Price: Low to high</option>
+                    <option value="hightoLow">Price: Low to high</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                </select>
+            </div>
+            <div id="product_grid">
+
             </div>
         </div>
     </div>
+
+    <div id="footer"></div>
 </body>
 </html>
-<script src="products.js"></script>
+<script type="module" src="products.js"></script>

@@ -1,14 +1,94 @@
 #conatiner{
     display: flex;
     justify-content: space-between;
+
+
 }
 #refine{
-    width: 30%;
+    width: 25%;
     border: 1px solid blue;
-    height: 400px;
+   
+   
+}
+#brief_intro{
+    width: 100%;
 }
 #product{
-    width: 70%;
-    border: 1px solid green;
-    height: 400px;
+    width: 75%;
+    border: 0px solid green;
+    margin: 20px;
+   
+}
+#product_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+}
+.product_img{
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.4s ease-out;
+}
+.product_img{
+    cursor: pointer;
+   
+}
+.product_img img{
+    width: 100%;
+}
+.product_img .Image2{
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+   
+}
+.product_details:hover .Image2{
+   width: 100%;
+    opacity: 1;
+    z-index: 0;
+}
+.Buy_btn{
+    padding: 13px;
+    color: #cae9d1;
+    background-color: #333333;
+    width: 100%;
+    border: none;
+}
+.Buy_btn:hover{
+    background-color: #9cece0;
+    color: black;
+}
+
+#categories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+}
+#categories p{
+    border: 1px solid black;
+    padding: 10px;
+    width: 85%;
+   
+}
+#categories :hover{
+    background-color: #b7e7e0;
+}
+#myBtn{
+   background-color: white;
+   border: none;
+   text-decoration: underline;
+    text-align: left;
+    padding: 5px;
+}
+#select{
+    padding: 10px;
+    padding-right: 10%;
+}
+
+.Gift_option{
+    border: 1px solid #ba3d49;
+    width: 38%;
+    padding: 8px;
 }
