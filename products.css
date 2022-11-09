@@ -1,0 +1,14 @@
+#conatiner{
+    display: flex;
+    justify-content: space-between;
+}
+#refine{
+    width: 30%;
+    border: 1px solid blue;
+    height: 400px;
+}
+#product{
+    width: 70%;
+    border: 1px solid green;
+    height: 400px;
+}
