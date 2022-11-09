@@ -10,3 +10,26 @@
     <h1>home</h1>
 </body>
 </html>
+
+<script>
+
+const product = async () =>{
+    try{
+
+        let res =await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`);
+
+        let data = await res.json();
+        let arr = []
+        for(let i=0; i<20; i++){
+            arr.push(data[i])
+        }
+        console.log("data", arr);
+
+
+    }catch(e){
+        console.log(e)
+    }
+}
+
+    product()
+</script>
