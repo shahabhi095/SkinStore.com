@@ -1,0 +1,57 @@
+#carousel{
+   
+    /* margin-top: 100px; */
+    height: 500px;
+ }
+ 
+ #carousel img{
+     display: flex;
+     
+     width: 90%;
+     height: 450px;
+     margin: auto;
+     margin-top: 30px;
+ }
+ 
+ #shopCat{
+
+    border: 0px solid green;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    /* gap: 10px; */
+    margin-top: 30px;
+
+    height: auto;
+
+
+ }
+
+ #shopCat>a img{
+width: 80%;
+display: flex;
+margin-left: auto;
+ }
+
+ #carousel+h2{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(46,51,55);
+    
+ }
+
+ #details{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+ }
+
+ #details>div{
+    border: 1px solid yellow;
+    margin: auto;
+ }
+
+ #details img{
+    width: 50%;
+ }
