@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #form {
+        /* border: 1px solid red; */
+        width: 36%;
+        height: 600px;
+        /* margin-top: 2%; */
+        margin-left: 15%;
+        margin-top: 8%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        ;
+    }
+
+    /* #div>h4 {
+        font-size: 30%;
+        margin-left: 30px;
+
+        width: 80%;
+        margin-top: 20%;
+
+    } */
+    #h4 {
+        font-size: 30px;
+        margin-top: 100px;
+        text-align: center;
+
+    }
+
+    #email {
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 30px;
+    }
+
+    #password {
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 30px;
+    }
+
+    #labelEamil {
+        margin-left: 30px;
+
+    }
+
+    #labelPassword {
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    #sign {
+        margin-top: 5%;
+        margin-left: 30px;
+        height: 35px;
+        width: 80%;
+        color: white;
+        background-color: black;
+
+    }
+
+    #forgetPassword {
+        color: grey;
+        margin-top: 10%;
+        margin-left: 30px;
+    }
+
+    #hr {
+        width: 36%;
+        margin-top: -6%;
+        margin-left: 30px;
+    }
+
+    #sign:hover {
+        background-color: rgb(0, 255, 242);
+        color: black;
+    }
+
+    #continue {
+        margin-left: 30px;
+        color: grey;
+        margin-top: 4%;
+    }
+
+    #facebook {
+        width: 70px;
+        margin-left: 30px;
+        /* border: 1px solid black; */
+
+    }
+
+    #divImg {
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 1px solid red; */
+    }
+
+    #google {
+        width: 60px;
+        margin-left: 30px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <form action="" id="form">
+        <div>
+            <h4 id="h4">Exiting Customers</h4><br>
+            <label for="Email" id="labelEamil">Email address</label><br>
+            <input type="email" name="Email" id="email"><br>
+            <label for="Password" id="labelPassword">Password</label><br>
+            <input type="password" name="Password" id="password"><br>
+            <p id="forgetPassword">FORGET YOUR Password?</p><br>
+            <hr id="hr">
+
+
+
+            <!-- <p>Facebook</p> -->
+            <!-- <button type="submit" name="" id="sign" value="Sign In"> -->
+            <button id="sign" type="click">Sign In</button>
+            <p id="continue">Or,Continue With</p>
+            <div id="divImg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eW2_WfINZK4c9_5hwizfu_BW3Krtd9aC2g&usqp=CAU"
+                    alt="" id="facebook" facebook>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSza3ydhaJRRgz6Iq66QZrqHZHax0y781-83oRCRpX893PPiaoyavuE4SrD-9GE6wVupGY&usqp=CAU"
+                    alt="" id="google">
+            </div>
+        </div>
+    </form>
+    <h1>Hello</h1>
+</body>
+
+</html>
+
+<script>
+
+
+    document.getElementById('sign').addEventListener('click', valid)
+
+    function valid(event) {
+        event.preventDefault()
+
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+
+        if (email === '' || null) {
+            window.alert('please enter mail id');
+        }
+        else if (password === '' || null) {
+            window.alert('please enter your password');
+        }
+        else {
+            window.alert('Thanks for sign in');
+        }
+    }
+</script>
