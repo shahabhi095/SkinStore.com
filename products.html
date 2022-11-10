@@ -7,16 +7,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkinCare</title>
     <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div id="navbar"></div>
     <div id="conatiner">
         <div id="refine">
-
+            <h3>Refine</h3>
+           <hr>
+            <div class="ProductType">
+            <label for="">Skincare Product Type</label>
+            <i class="fa fa-sort-asc" style="font-size:24px"></i>
+            <i class="fa fa-sort-desc" style="font-size:24px"></i>
+            <hr>
+            </div>
+            <div>
+                <input type="checkbox" class="ABC" id="serums" name="serums" value="serums">
+                <label for="serums"> Serums</label><br>
+                <input type="checkbox" class="ABC" id="moisturisers" name="Moisturisers" value="Moisturisers">
+                <label for="moisturisers"> Moisturisers</label><br>
+                <input type="checkbox" class="ABC" id="cleansers" name="Cleansers" value="Cleansers">
+                <label for="Cleansers"> Cleansers</label><br>
+                <input type="checkbox" class="ABC" id="toners" name="Toners" value="Toners">
+                <label for="serums"> Toners</label><br>
+                <input type="checkbox" class="ABC" id="EyeCare" name="Eye Care" value="Eye Care">
+                <label for="moisturisers"> Eye Care</label><br>
+                <input type="checkbox" class="ABC" id="masks" name="Masks" value="Masks">
+                <label for="Cleansers"> Masks</label><br>
+                <input type="checkbox" name="Lip Care" id="LipCare" class="ABC" value="Lip Care">
+                <label for="Lip Care">Lip Care</label><br>
+                <input type="checkbox" class="ABC" name="Exfoliators & Scrubs" id="exfoliators" value="Exfoliators  & Scrubs">
+                <label for="Exfoliators & Scrubs">Exfoliators & Scrubs</label><br>
+                <input type="checkbox" class="ABC" name="Peels" id="peels" value="Peels">
+                <label for="Peels">Peels</label><br>
+            </div>
+            <div class="SkincareFormat_heading">
+            <label for="">Skincare Format</label>
+            <i class="fa fa-sort-asc" style="font-size:24px"></i>
+            <i class="fa fa-sort-desc" style="font-size:24px"></i>
+            <hr>
+            </div>
+            <div class="SkincareFormat_checkbox">
+                <input type="checkbox" class="ABC" id="fluid" name="Fluid" value="Fluid">
+                <label for="Fluid"> Fluid</label><br>
+                <input type="checkbox" class="ABC" id="cream" name="Cream" value="Cream">
+                <label for="Cream"> Cream</label><br>
+                <input type="checkbox" class="ABC" id="gel" name="Gel" value="Gel">
+                <label for="Gel"> Gel</label><br>
+                <input type="checkbox" class="ABC" id="foam" name="Foam" value="Foam">
+                <label for="Foam"> Foam</label><br>
+                <input type="checkbox" class="ABC" id="clay" name="Clay" value="Clay">
+                <label for="Clay"> Clay</label><br>
+                <input type="checkbox" class="ABC" id="Sheet" name="Sheet" value="Sheet">
+                <label for="Sheet"> Sheet</label><br>
+                <input type="checkbox" class="ABC" id="balm" name="Balm" value="Balm">
+                <label for="Balm"> Balm</label><br>
+                <input type="checkbox" class="ABC" id="mist" name="Mist" value="Mist">
+                <label for="Mist"> Mist</label><br>
+                <input type="checkbox" class="ABC" id="oil" name="Oil" value="Oil">
+                <label for="Oil"> Oil</label><br>
+            </div>
+            <div class="SkinType_heading">
+                <label for="">Skin Type</label>
+                <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i>
+                <hr>
+            </div>
+            <div class="SkinType_checkbox">
+                <input type="checkbox" class="ABC" id="all" name="All" value="All">
+                <label for="All"> All</label><br>
+                <input type="checkbox" class="ABC" id="combination" name="Combination" value="Combination">
+                <label for="Combination"> Combination</label><br>
+                <input type="checkbox" class="ABC" id="dry" name="Dry" value="Dry">
+                <label for="Dry"> Dry</label><br>
+                <input type="checkbox" class="ABC" id="mature" name="Mature" value="Mature">
+                <label for="Mature"> Mature</label><br>
+                <input type="checkbox" class="ABC" id="normal" name="Normal" value="Normal">
+                <label for="Normal"> Normal</label><br>
+                <input type="checkbox" class="ABC" id="oily" name="Oily" value="Oily">
+                <label for="Oily"> Oily</label><br>
+                <input type="checkbox" class="ABC" id="sensitive" name="Sensitive" value="Sensitive">
+                <label for="Sensitive"> Sensitive</label><br>
+            </div>
+            <div class="SPFContent_heading">
+                <label for="">Skin Type</label>
+                <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i>
+                <hr>
+            </div>
+            <div class="SPFContent_checkbox">
+                <input type="checkbox" class="ABC" id="low PF" name="Low SPF" value="Low SPF">
+                <label for="Low SPF"> Low SPF</label><br>
+                <input type="checkbox" class="ABC" id="noSPF" name="No SPF" value="No SPF">
+                <label for="No SPF"> No SPF</label><br>
+                <input type="checkbox" class="ABC" id="SPF15+" name="SPF15+" value="SPF15+">
+                <label for="SPF15+"> SPF15+</label><br>
+                <input type="checkbox" class="ABC" id="SPF30+" name="SPF30+" value="SPF30+">
+                <label for="SPF30+"> SPF30+</label><br>
+                <input type="checkbox" class="ABC" id="norSPF" name="NorSPF" value="NorSPF">
+                <label for="NorSPF"> NorSPF</label><br>
+                <input type="checkbox" class="ABC" id="oily" name="Oily" value="Oily">
+                <label for="Oily"> Oily</label><br>
+                <input type="checkbox" class="ABC" id="sensitive" name="Sensitive" value="Sensitive">
+                <label for="Sensitive"> Sensitive</label><br>
+            </div>
         </div>
         <div id="product">
-            <h1>Shop SkinCeuticals Skincare</h1>
+            <h1 id="heading">Shop SkinCeuticals Skincare</h1>
             <p id="total_items"><span>result</span></p>
             <div id="brief_intro">
                 <p>The SkinCeuticals story began with Dr. Sheldon Pinnell’s groundbreaking research on vitamin C in
@@ -59,6 +157,15 @@
             </div>
             <div id="product_grid">
 
+            </div>
+            <div class="bg-modal">
+                <div class="modal-content">
+                    <div class="close">+</div>
+                    <h3>Select your Gift</h3>
+                    <p>Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.</p>
+                    <button id="shop-now">SHOP NOW</button>
+            
+                </div>
             </div>
         </div>
     </div>

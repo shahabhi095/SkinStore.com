@@ -136,6 +136,9 @@ const DisplayTable = (Array) => {
     let Gift = document.createElement("p");
     Gift.innerHTML = "Select your Gift";
     Gift.className = "Gift_option";
+    Gift.onclick = ()=>{
+      ShowPopUp();
+    };
 
     //rating
     let Rating = document.createElement("p");
@@ -168,6 +171,31 @@ const BuyProduct = (el) => {
   localStorage.setItem("addToCart", JSON.stringify(el));
   // window.location.href = "cart.html"
 };
+
+
+// display pop up on click on select your gift
+
+  const ShowPopUp = () =>{
+   document.querySelector(".bg-modal").style.display = "flex"
+  };
+
+//close fumction for closing popup
+document.querySelector(".close").addEventListener("click", function(){
+  document.querySelector(".bg-modal").style.display = "none";
+})
+
+// when click on shop now button of popup it shoul go to products page and heading should be updated with discount
+document.getElementById("shop-now").addEventListener("click", function(){
+  document.querySelector(".bg-modal").style.display = "none";
+let heading = document.getElementById("heading");
+heading.innerText = null;
+console.log(heading);
+ console.log(heading);
+heading.innerHTML = "15% off with code SS15";
+  // window.location.href = "products.html";
+   
+
+});
 
 // import { footer } from "./footer.js";
 
