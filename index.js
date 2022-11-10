@@ -48,7 +48,7 @@ let productsData =[
     {
     id:"2",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/39/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot8-600x600-063639.png",
-  name: "Corrective Gel",
+  name: "Super Food",
   rating: 4,
   price:  350,
   brand: "Elmis ",
@@ -57,7 +57,7 @@ let productsData =[
     {
     id:"3",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/27/SkinStore_Q4_Photography_2022_-_October_-_THG0035163_-_BATCHING_shot8600x600-090227.jpg",
-  name: "Corrective Gel",
+  name: "Cream",
   rating: 3,
   price:  200,
   brand: "Obagi Medicals ",
@@ -66,7 +66,7 @@ let productsData =[
     {
     id:"4",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/10/0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_14-600x600-091010.jpg",
-  name: "Corrective Gel",
+  name: "Preparation Gel",
   rating: 5,
   price:  500,
   brand: "Tripolor",
@@ -75,7 +75,7 @@ let productsData =[
     {
     id:"5",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/42/best_selling-064442.jpg",
-  name: "Corrective Gel",
+  name: "Firm Riche",
   rating: 3,
   price:  100,
   brand: "Neocutis",
@@ -84,7 +84,7 @@ let productsData =[
     {
     id:"6",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/54/original-original-original-500x500-085431-083903-064454.jpg",
-  name: "Corrective Gel",
+  name: "Lumere",
   rating: 1,
   price:  800,
   brand: "Robin",
@@ -93,7 +93,7 @@ let productsData =[
     {
     id:"7",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/28/original-Screenshot_2022-03-07_141739-065628.png",
-  name: "Corrective Gel",
+  name: "Cleanser",
   rating: 5.5,
   price:  250,
   brand: "Estee louder",
@@ -102,7 +102,7 @@ let productsData =[
     {
     id:"8",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/34/original-dhc.ss-061734.jpg",
-  name: "Corrective Gel",
+  name: "Face Wash",
   rating: 5,
   price:  600,
   brand: "DHC",
@@ -111,7 +111,7 @@ let productsData =[
     {
     id:"9",
   image1: "https://static.thcdn.com/images/small/webp/widgets/121-us/23/original-perricone.ss-013423.jpg",
-  name: "Corrective Gel",
+  name: "Hair Gel",
   rating: 3.8,
   price:  180,
   brand: "Periccon MD",
@@ -147,12 +147,21 @@ const appendData =()=>{
      let prices = document.createElement('p');
      prices.innerText=el.price;
 
-     let btn =document.createElement('button');
-     btn.innerText="Add to Cart"
+     let btn1 = document.createElement('button');
+     btn1.innerText="Shop Now"
+     btn1.addEventListener("click", function() {
+      
+      mybtn1(el) 
+    
+    } )
+
+    //  let btn =document.createElement('button');
+    //  btn.innerText="Add to Cart"
+    //  btn.addEventListener("click",addCart);
      
 
 
-     div.append(productImg,productName,brandName,productCat,productRatings,prices,btn)
+     div.append(productImg,productName,brandName,productCat,productRatings,prices,btn1)
 
      productsInfo.append(div);
     })
@@ -160,3 +169,17 @@ const appendData =()=>{
 appendData();
 
 
+function mybtn1(el){
+let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
+cartArr.push(el);
+localStorage.setItem("cart_items",JSON.stringify(cartArr))
+
+console.log(cartArr);
+
+
+
+
+  window.location.href="products.html"
+}
+
+ 
