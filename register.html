@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading {
+        margin-left: 5%;
+        padding-top: 20px;
+
+    }
+
+
+
+    #subHeading2 {
+        /* border: 1px solid red; */
+        margin-bottom: 10px;
+        height: 70px;
+        padding-top: 50px;
+    }
+
+
+    #form {
+        /* border: 1px solid red; */
+        width: 50%;
+        height: 1100px;
+        margin: auto;
+        margin-top: 8%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        ;
+    }
+
+
+    #email {
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 50px;
+    }
+
+    #password {
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 50px;
+    }
+
+
+    #labelEamil {
+        margin-left: 30px;
+
+    }
+
+    #labelPassword {
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    #divImg {
+        width: 100%;
+        display: flex;
+        /* justify-content: space-evenly; */
+        /* border: 1px solid red; */
+        margin-bottom: 20px;
+    }
+
+    #divGoogle {
+        display: flex;
+        border: 1px solid black;
+        width: 40%;
+        margin-left: 30px;
+        justify-content: space-evenly;
+    }
+
+    #google {
+        width: 50px;
+        margin-left: 30px;
+        /* border: 1px solid black; */
+        height: 50px;
+    }
+
+    #divFacebook {
+        display: flex;
+        border: 1px solid black;
+        width: 40%;
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+
+    #facebook {
+        width: 50px;
+        margin-left: 30px;
+        /* border: 1px solid black; */
+        height: 50px;
+    }
+
+    #sign {
+        margin-top: 5%;
+        margin-left: 30px;
+        height: 50px;
+        width: 80%;
+        color: white;
+        background-color: black;
+        font-size: 20px;
+
+    }
+
+    #sign:hover {
+        background-color: rgb(0, 255, 242);
+        color: black;
+
+    }
+
+    #boldDiv {
+        margin-top: 40px;
+        /* margin-left: 30px; */
+        text-align: center;
+    }
+</style>
+
+<body>
+
+
+
+    <form action="" id="form">
+
+        <div id="upperPart">
+
+            <div id="heading">
+                <h1 class="subHeading">About You</h1>
+                <h2 id="subHeading2">Sign Up With</h2>
+            </div>
+
+            <div id="divImg">
+                <div id="divFacebook">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eW2_WfINZK4c9_5hwizfu_BW3Krtd9aC2g&usqp=CAU"
+                        alt="" id="facebook" facebook>
+                    <p>facebook</p>
+                </div>
+                <div id="divGoogle">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSza3ydhaJRRgz6Iq66QZrqHZHax0y781-83oRCRpX893PPiaoyavuE4SrD-9GE6wVupGY&usqp=CAU"
+                        alt="" id="google">
+                    <p>Google</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div>
+            <label for="Name" id="email">Full Name</label><br>
+            <input type="text" id="email" name="Name"><br>
+            <label for="Email" id="labelEamil">Email address</label><br>
+            <input type="email" name="Email" id="email"><br>
+
+            <label for="ConfirmEmail" id="labelEamil">Confirm Email address</label><br>
+            <input type="email" name="ConfirmEmail" id="email"><br>
+
+            <label for="Password" id="labelPassword">Password</label><br>
+            <input type="password" name="Password" id="password"><br>
+            <!-- <p id="pPaasword">Include a minimum of 6 characters, and contain at least 1 number</p> -->
+
+
+            <label for="ConfirmPassword" id="labelPassword">Confirm Password</label><br>
+            <input type="password" name="ConfirmPassword" id="password"><br>
+
+            <label for="phoneNumber" id="password">Cell Phone Number</label><br>
+            <input type="text" id="password" name="phoneNumber"><br>
+
+            <button id="sign" type="click">Sign In</button>
+
+            <div id="boldDiv">
+                <b id="bold">By proceeding, you are confirming that you agree to out.Terms and Conditions and Privacy
+                    Policy</b>
+            </div>
+
+        </div>
+    </form>
+
+
+    </div>

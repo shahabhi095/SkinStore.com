@@ -1,0 +1,173 @@
+{
+  "productsData": [
+    {
+      "id": "1048",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12752678-1894894638558975.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13457282-2034924452238935.jpg",
+      "Name": "Blotted Lip",
+      "rating": 4.5,
+      "price": 700
+    },
+    {
+      "id": "1047",
+      "image1": "https://www.skinstore.com/elemis-pro-collagen-a-tale-of-two-creams-set/13899711.html",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13496554-2114937161282806.jpg",
+      "Name": "B Smudged",
+      "rating": 4.0,
+      "price": 650
+    },
+    {
+      "id": "1046",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13441436-4554907542396017.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12207766-2094815017536953.jpg",
+      "Name": "Pressed Powder Foundation",
+      "rating": 3.5,
+      "price": 300
+    },
+    {
+      "id": "1045",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13694394-8764938373710702.jpg",
+      "image2": "https://static.thcdn.com/images/hxsmall/webp//productimg/1600/1600/12635458-4954815018605244.jpg",
+      "Name": "Perfect Lash Mascara",
+      "rating": 2.5,
+      "price": 330
+    },
+    {
+      "id": "1044",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13930359-2284997201742471.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11141204-1364815015952806.jpg",
+      "Name": "Mineral Eye Brow Liner Charcoal Brown",
+      "rating": 3.0,
+      "price": 500
+    },
+    {
+      "id": "1043",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/10362440-3474840456569681.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12595833-5934819257059448.jpg",
+      "Name": "Eye Shadow Palette Smokey",
+      "rating": 4.5,
+      "price": 900
+    },
+    {
+      "id": "1042",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13432965-1024903973866227.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13156809-9564915281483423.jpg",
+      "Name": "Conch Lipstick",
+      "rating": 4.0,
+      "price": 670
+    },
+    {
+      "id": "1041",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13441436-4554907542396017.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12553401-7484773256595460.jpg",
+      "Name": "Blotted Lip",
+      "rating": 4.2,
+      "price": 500
+    },
+    {
+      "id": "1040",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11712269-2894815568527624.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12595833-5934819257059448.jpg",
+      "Name": "B Smudged",
+      "rating": 4.9,
+      "price": 1200
+    },
+    {
+      "id": "1039",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12462183-1274748213673447.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12062216-1214744520349102.jpg",
+      "Name": "Eye Shadow Palette Smokey",
+      "rating": 3.9,
+      "price": 1500
+    },
+    {
+      "id": "1038",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/10304274-7754815563230002.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12553401-7484773256595460.jpg",
+      "Name": "Pressed Powder Foundation",
+      "rating": 1.5,
+      "price": 800
+    },
+    {
+      "id": "1037",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13432965-1024903973866227.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12595833-5934819257059448.jpg",
+      "Name": "Blotted Lip",
+      "rating": 2.3,
+      "price": 1300
+    },
+    {
+      "id": "1036",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13447267-1964911766001100.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12062216-1214744520349102.jpg",
+      "Name": "B Smudged",
+      "rating": 3.4,
+      "price": 5500
+    },
+    {
+      "id": "1035",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13694395-1894938373841145.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11141204-1364815015952806.jpg",
+      "Name": "Conch Lipstick",
+      "rating": 4.5,
+      "price": 5400
+    },
+    {
+      "id": "1034",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13694394-8764938373710702.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12707566-1854815024980973.jpg",
+      "Name": "Mineral Eye Brow Liner Charcoal Brown",
+      "rating": 4.6,
+      "price": 7700
+    },
+    {
+      "id": "1033",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13432968-3654903973932062.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12207766-2094815017536953.jpg",
+      "Name": "Perfect Lash Mascara",
+      "rating": 4.2,
+      "price": 2200
+    },
+    {
+      "id": "1032",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13441436-4554907542396017.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12635458-4954815018605244.jpg",
+      "Name": "Eye Shadow Palette Smokey",
+      "rating": 4.1,
+      "price": 3400
+    },
+    {
+      "id": "1031",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11831873-7284872016720407.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/13496554-2114937161282806.jpg",
+      "Name": "Pressed Powder Foundation",
+      "rating": 4.8,
+      "price": 3200
+    },
+    {
+      "id": "1030",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12857505-6994918742357574.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12707566-1854815024980973.jpg",
+      "Name": "Perfect Lash Mascara",
+      "rating": 2.0,
+      "price": 1300
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
