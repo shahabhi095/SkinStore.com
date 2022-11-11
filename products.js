@@ -101,6 +101,20 @@ let productsData = [
   },
 ];
 
+const productData = async ()=>{
+    try{
+let response = await fetch("http://localhost:3000/productsData");
+
+let data = await response.json();
+DisplayTable(data);
+console.log(data)
+    }catch(error){
+      console.log(error)
+    }
+}
+
+productData();
+
 const DisplayTable = (Array) => {
   let total_items = document.getElementById("total_items");
   total_items.innerText = Array.length + " " + "results";
@@ -163,7 +177,7 @@ const DisplayTable = (Array) => {
   });
 };
 
-DisplayTable(productsData);
+
 
 //this function will call when buy button will be clicked
 
