@@ -34,7 +34,7 @@ const createPost = async () => {
 
     }
 
-    let res = await fetch(`http://localhost:3004/AddProduct`, {
+    let res = await fetch(`http://localhost:3004/AddCart`, {
         method: "POST",
         body: JSON.stringify(send_this_data),
         headers: {

@@ -34,6 +34,13 @@
         ;
     }
 
+    #Name {
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 50px;
+    }
 
     #email {
         margin-left: 30px;
@@ -51,6 +58,31 @@
         height: 50px;
     }
 
+    #ConfirmPassword {
+        height: 50px;
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #ConfirmEmail {
+
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 50px;
+
+    }
+
+    #CellPhone {
+        margin-left: 30px;
+        width: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 50px;
+    }
 
     #labelEamil {
         margin-left: 30px;
@@ -155,13 +187,17 @@
 
 
         <div>
-            <label for="Name" id="email">Full Name</label><br>
-            <input type="text" id="email" name="Name"><br>
+            <label for="Name" id="Name">Full Name</label><br>
+
+            <input type="text" id="Name" name="Name"><br>
+
             <label for="Email" id="labelEamil">Email address</label><br>
+
             <input type="email" name="Email" id="email"><br>
 
             <label for="ConfirmEmail" id="labelEamil">Confirm Email address</label><br>
-            <input type="email" name="ConfirmEmail" id="email"><br>
+
+            <input type="email" name="ConfirmEmail" id="ConfirmEmail"><br>
 
             <label for="Password" id="labelPassword">Password</label><br>
             <input type="password" name="Password" id="password"><br>
@@ -169,10 +205,10 @@
 
 
             <label for="ConfirmPassword" id="labelPassword">Confirm Password</label><br>
-            <input type="password" name="ConfirmPassword" id="password"><br>
+            <input type="password" name="ConfirmPassword" id="ConfirmPassword"><br>
 
             <label for="phoneNumber" id="password">Cell Phone Number</label><br>
-            <input type="text" id="password" name="phoneNumber"><br>
+            <input type="text" id="CellPhone" name="phoneNumber"><br>
 
             <button id="sign" type="click">Sign In</button>
 
@@ -186,3 +222,44 @@
 
 
     </div>
+
+    <script>
+
+
+        document.getElementById('sign').addEventListener('click', valid)
+
+
+
+        function valid(event) {
+            event.preventDefault()
+
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            let ConfirmEmail = document.getElementById('ConfirmEmail').value
+            let ConfirmPassword = document.getElementById('ConfirmPassword').value
+            let CellPhone = document.getElementById('CellPhone').value
+
+            // if (email === '' || null) {
+            //     window.alert('please enter mail id');
+            // }
+            // else if (password === '' || null) {
+            //     window.alert('please enter your password');
+            // }
+            // else {
+            //     window.alert('Thanks for sign in');
+            // }
+            localStorage.setItem('email1', email)
+            // localStorage.setItem('ConfirmEmai1', JSON.stringify(ConfirmEmail))
+            localStorage.setItem('password1', password)
+            // localStorage.setItem('ConfirmPassword1', JSON.stringify(ConfirmPassword))
+            // localStorage.setItem('CellPhone1', JSON.stringify(CellPhone))
+
+
+
+
+
+        }
+
+
+    </script>

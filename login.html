@@ -184,47 +184,32 @@
 <script>
 
 
-    document.getElementById('sign').addEventListener('click', valid)
+
+
+
+
 
     document.getElementById('sign').addEventListener('click', checklogin)
 
-    function valid(event) {
-        event.preventDefault()
-
-        let email = document.getElementById('email').value;
-        let password = document.getElementById('password').value;
-
-        // if (email === '' || null) {
-        //     window.alert('please enter mail id');
-        // }
-        // else if (password === '' || null) {
-        //     window.alert('please enter your password');
-        // }
-        // else {
-        //     window.alert('Thanks for sign in');
-        // }
-        localStorage.setItem('email1', email)
-        // localStorage.setItem('password1', JSON.stringify(password))
-        localStorage.setItem('password1', password)
-    }
     function checklogin() {
 
 
         let email = document.getElementById('email').value;
         let password = document.getElementById('password').value;
 
-        // let email1 = JSON.parse(localStorage.getItem('emai1'))
-        // let password1 = JSON.parse(localStorage.getItem('password1'))
 
 
 
-        let email1 = localStorage.getItem('emai1')
-        let password1 = localStorage.getItem('password1')
 
-        if (email == email1) {
-            window.alert("login successful")
+
+        let email1 = localStorage.getItem('email1') || []
+        let password1 = localStorage.getItem('password1') || []
+
+
+        if (email == email1 && password == password1) {
+            alert("login successful")
         } else {
-            window.alert("Email or Password is not valid")
+            alert("Email or Password is not valid")
         }
 
 
