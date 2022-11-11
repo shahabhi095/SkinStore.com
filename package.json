@@ -1,0 +1,20 @@
+{
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "Likely-cough-0971",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahabhi095/likely-cough-9107.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahabhi095/likely-cough-9107/issues"
+  },
+  "homepage": "https://github.com/shahabhi095/likely-cough-9107#readme"
+}

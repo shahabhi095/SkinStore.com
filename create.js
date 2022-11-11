@@ -20,6 +20,7 @@ const createPost = async () => {
     let rating = document.getElementById('rating').value;
     let price = document.getElementById('price').value;
     let brand = document.getElementById('brand').value;
+    let brand_imag = document.getElementById("brand_imag").value;
     let category = document.getElementById('category').value;
 
     let send_this_data = {
@@ -30,17 +31,18 @@ const createPost = async () => {
         rating,
         price,
         brand,
+        brand_imag,
         category
 
     }
 
-    let res = await fetch(`http://localhost:3004/AddProduct`, {
-        method: "POST",
-        body: JSON.stringify(send_this_data),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    let data = res.json()
+    let res = await fetch(`http://localhost:3000/productsData`, {
+      method: "POST",
+      body: JSON.stringify(send_this_data),
+      headers: {
+        "Content-Type":"application/json",
+      },
+    });
+    let data =await res.json()
     console.log('data', data);
 }
