@@ -29,7 +29,7 @@ header>nav{
 
 }
 
-#nav1>a{
+#nav1 a{
     text-decoration: none;
     color: rgb(196,136,50);
     font-size: 20px;
@@ -45,13 +45,154 @@ header>nav{
     justify-content: space-around;
     margin-top: 20px;
 }
-ul>a{
+
+#nav1+ul>li:hover{
+    
+    /* height: 30px; */
+    /* width: 60px; */
+    border: 1px solid blue;
+    background-color:rgba(90, 44, 44, 0.629) ;
+    transition: 1s;
+    
+}
+
+#nav1+ul>li>a:hover{
+    color: white;
+}
+ul a{
     text-decoration: none;
     color: rgb(50,50,51);
     
 }
 
-ul>a>li{
+ul>li{
     list-style: none;
 }
 
+
+
+.dropdown_menu{
+    display: none;
+}
+
+ nav ul li:hover .dropdown_menu{
+    
+display: block;
+position: absolute;
+border: 0.5px solid wheat;
+border-radius: 10px;
+/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+width: 250px;
+  
+  
+  /* top: 100%; */
+    background-color: white;
+    /* height: auto; */
+}
+
+nav ul li:hover .dropdown_menu ul{
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 10px;
+}
+
+nav ul li:hover .dropdown_menu ul li{
+    
+    /* width: 200px; */
+    padding: 10px;
+    font-size: 20px;
+     
+    
+}
+
+.dropdown_menu ul li:hover{
+    background-color: rgb(198, 153, 85);
+    transition: 1s;
+}
+
+.dropdown_menu ul li a:hover{
+    color: white;
+}
+/* #fg{
+    display: flex;
+    flex-direction: column;
+}
+#fg>li{
+    
+    font-family: cursive;
+}
+ */
+
+ #cart{
+    border: 0px solid red;
+    display: flex;
+
+    
+ }
+
+ .account_menu1{
+    display: none;
+ }
+
+ #acnt:hover .account_menu1{
+display: block;
+position: absolute;
+border: 0.5px solid wheat;
+border-radius: 10px;
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+width: 250px;
+  
+  
+  
+    background-color: white;
+ }
+#acnt:hover .account_menu1>ul>.btn2>li button{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 40px;
+width: 100%;
+border: 1px solid rgba(4, 4, 4, 0.495);
+
+background-color: transparent;
+
+
+
+}
+
+.account_menu1>ul>.btn2>li:hover{
+    background-color: rgba(0, 128, 128, 0.482);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#acnt:hover .account_menu1>ul>.btn2{
+    background-color: rgb(243,243,242);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.614) ;
+}
+#acnt:hover .account_menu1 ul li{
+    list-style: none;
+}
+ #acnt>.account_menu1>ul>li>a{
+    color: black;
+ }
+
+ .cartnumber{
+    position: relative;
+
+ }
+
+ #cart{
+    position: absolute;
+    top: -13px;
+    right: 51px;
+    padding: 1px 4px;
+    border: none;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    display: flex;
+    background-color: black;
+    color: white;
+ }
