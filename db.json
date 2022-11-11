@@ -5,11 +5,11 @@
       "image1": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-2844930071318699.jpg",
       "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-1514932677894190.jpg",
       "name": "Brightening Treatment 1 fl. oz",
-      "rating": 4.5,
-      "price": 105,
+      "rating": "4.5",
+      "price": "105",
       "  brand": "SkinCeuticals",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
-      "categories": "SkinCeuticals Cleansers"
+      "categories": "SkinCeuticals "
     },
     {
       "id": "2",
@@ -17,10 +17,10 @@
       "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289627-6904866614636649.jpg",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "name": "SkinCeuticals Physical Eye UV Defense SPF 50",
-      "rating": 4,
-      "price": 30,
+      "rating": "4",
+      "price": "30",
       "brand": "SkinCeuticals",
-      "categories": "SkinCeuticals Cleansers"
+      "categories": "SkinCeuticals "
     },
     {
       "id": "3",
@@ -28,8 +28,8 @@
       "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-8744892770898772.jpg",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "name": "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
-      "rating": 3.4,
-      "price": 169,
+      "rating": "3.4",
+      "price": "169",
       "brand": "SkinCeuticals",
       "categories": "SkinCeuticals Cleansers"
     },
@@ -39,10 +39,10 @@
       "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11294635-6514892768465172.jpg",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "name": "SkinCeuticals A.G.E. Interrupter",
-      "rating": 4.2,
-      "price": 168,
+      "rating": "4.2",
+      "price": "168",
       "brand": "SkinCeuticals",
-      "categories": "SkinCeuticals Cleansers"
+      "categories": "SkinCeuticals "
     },
     {
       "id": "5",
@@ -50,10 +50,10 @@
       "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12635425-1514884719372601.jpg",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/christopherobin.gif",
       "name": "Hydrating Leave-in Mist with Aloe Vera 150ml",
-      "rating": 4.6,
-      "price": 27.3,
+      "rating": "4.6",
+      "price": "27.3",
       "brand": "Christophe Robin",
-      "categories": "Hair Cleansers"
+      "categories": "Hair "
     },
     {
       "id": "oYM8vHv",
@@ -76,6 +76,215 @@
       "brand": "w3llpeople",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "category": "powder"
+    },
+    {
+      "id": "QcX1HI_",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11370307-5484944342267303.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11370307-5484944342267303.jpg",
+      "name": "EltaMD Foaming Facial Cleanser",
+      "rating": "4.5",
+      "price": "$30.50",
+      "brand": "elta MD",
+      "category": "Cleansers"
+    },
+    {
+      "id": "19CKNNj",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11289657-9384876690289403.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11289657-1754876690336179.jpg",
+      "name": "SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",
+      "rating": "3.0",
+      "price": "$32.00",
+      "brand": "pionce",
+      "category": "Cleansers"
+    },
+    {
+      "id": "3VRYkCE",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11054487-7024901860582746.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11054487-9844887845241180.jpg",
+      "name": "First Aid Beauty Face Cleanser (5 oz.)",
+      "rating": "4.0",
+      "price": "$33.00",
+      "brand": "obegi",
+      "category": "Cleansers"
+    },
+    {
+      "id": "_X50tNZ",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/10363611-1624963531670292.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/10363611-1664963531714518.jpg",
+      "name": "Eve Lom Cleanser 7oz (Worth $170)",
+      "rating": "5.0",
+      "price": "45.00",
+      "brand": "epionce",
+      "category": "Cleansers"
+    },
+    {
+      "id": "Sibu0e1",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11207443-2214866130380732.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11207443-7744859308052472.jpg",
+      "name": "DHC Deep Cleansing Oil (Various Sizes)",
+      "rating": "3.4",
+      "price": "$40.00",
+      "brand": "ReVive",
+      "category": "Moisturizers"
+    },
+    {
+      "id": "LtMx47H",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11984195-2134891244342475.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11984195-5474815569153559.jpg",
+      "name": "Elemis Pro-Collagen Rose Cleansing Balm",
+      "rating": "4.2",
+      "price": "$2.0",
+      "brand": "elta MD",
+      "category": "Moisturizers"
+    },
+    {
+      "id": "IFHhfot",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12901858-1914871998972704.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12901858-1264864284374214.jpg",
+      "name": "DHC Deep Cleansing Oil Medium 4.1 fl. oz.",
+      "rating": "4.1",
+      "price": "$50.00",
+      "brand": "SkinMedical",
+      "category": "Moisturizers"
+    },
+    {
+      "id": "3CFSSC",
+      "image1": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-1174892770940184.jpg",
+      "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-8744892770898772.jpg",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
+      "name": "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
+      "rating": "3.4",
+      "price": "$120",
+      "brand": "epionce",
+      "categories": "Moisturizers"
+    },
+    {
+      "id": "oYM8vHv",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11289146-1474967222788272.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12595833-5934819257059448.jpg",
+      "name": "Blotted Lip",
+      "rating": "2.3",
+      "price": "$1300",
+      "brand": "glossier",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/christopherobin.gif",
+      "category": "Hair Cleansers"
+    },
+    {
+      "id": "VZFBF",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11287459-1614871766444156.jpg",
+      "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-1514932677894190.jpg",
+      "name": "Brightening Treatment 1 fl. oz",
+      "rating": "4.5",
+      "price": "$40.00",
+      "brand": "SkinCeuticals",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
+      "categories": "Serums"
+    },
+    {
+      "id": "RVRVA",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12903093-1944871741682105.jpg",
+      "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289627-6904866614636649.jpg",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
+      "name": "SkinCeuticals Physical Eye UV Defense SPF 50",
+      "rating": "4",
+      "price": "$30.50",
+      "brand": "epionce",
+      "categories": "Serums"
+    },
+    {
+      "id": "FVRRCS",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12100152-7874924695636114.jpg",
+      "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-8744892770898772.jpg",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
+      "name": "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
+      "rating": "3.4",
+      "price": "$169",
+      "brand": "ReVive",
+      "categories": "Serums"
+    },
+    {
+      "id": "5fvfd",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11289609-8744892770898772.jpg",
+      "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12635425-1514884719372601.jpg",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/christopherobin.gif",
+      "name": "Hydrating Leave-in Mist with Aloe Vera 150ml",
+      "rating": 4.6,
+      "price": 27.3,
+      "brand": "Christophe Robin",
+      "categories": "Vitamin C"
+    },
+    {
+      "id": "oYM8vHv",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11291543-2074864291141689.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12595833-5934819257059448.jpg",
+      "name": "Blotted Lip",
+      "rating": "2.3",
+      "price": "1300",
+      "brand": "glossier",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/christopherobin.gif",
+      "category": "Vitamin C"
+    },
+    {
+      "id": "YxEnIdo",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11370275-2024892024139195.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12707566-1854815024980973.jpg",
+      "name": "Mineral Eye Brow Liner Charcoal Brown",
+      "rating": "4.6",
+      "price": "7700",
+      "brand": "w3llpeople",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
+      "category": "Vitamin C"
+    },
+    {
+      "id": "_X50tNZ",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11289073-7284871063750085.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/10363611-1664963531714518.jpg",
+      "name": "Eve Lom Cleanser 7oz (Worth $170)",
+      "rating": "5.0",
+      "price": "45.00",
+      "brand": "epionce",
+      "category": "Vitamin C"
+    },
+    {
+      "id": "Sibu0e1",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12810778-1424849205833545.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11207443-7744859308052472.jpg",
+      "name": "DHC Deep Cleansing Oil (Various Sizes)",
+      "rating": "3.4",
+      "price": "$40.00",
+      "brand": "ReVive",
+      "category": "AHA"
+    },
+    {
+      "id": "LtMx47H",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11363400-5054924666047657.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11984195-5474815569153559.jpg",
+      "name": "Elemis Pro-Collagen Rose Cleansing Balm",
+      "rating": "4.2",
+      "price": "$2.0",
+      "brand": "elta MD",
+      "category": "AHA"
+    },
+    {
+      "id": "IFHhfot",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11712270-1604891243974612.jpg",
+      "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12901858-1264864284374214.jpg",
+      "name": "DHC Deep Cleansing Oil Medium 4.1 fl. oz.",
+      "rating": "4.1",
+      "price": "$50.00",
+      "brand": "SkinMedical",
+      "category": "AHA"
+    },
+    {
+      "id": "3CFSSC",
+      "image1": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11653879-1364894571382930.jpg",
+      "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-8744892770898772.jpg",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
+      "name": "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
+      "rating": "3.4",
+      "price": "169",
+      "brand": "epionce",
+      "categories": "AHA"
     }
   ]
 }
