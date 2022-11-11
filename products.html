@@ -12,18 +12,20 @@
 
 <body>
     <div id="navbar"></div>
+    <input type="text" id="search">
+    <button id="SearchButton">Search</button>
     <div id="conatiner">
         <div id="refine">
             <h3>Refine</h3>
-           <hr>
-            <div class="ProductType">
-            <label for="">Skincare Product Type</label>
-            <i class="fa fa-sort-asc" style="font-size:24px"></i>
-            <i class="fa fa-sort-desc" style="font-size:24px"></i>
             <hr>
+            <div class="ProductType">
+                <label for="">Skincare Product Type</label>
+                <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i>
+                <hr>
             </div>
             <div>
-                <input type="checkbox" class="ABC" id="serums" name="serums" value="serums">
+                <input type="checkbox" class="ABC" id="serums" name="serums" value="Serums">
                 <label for="serums"> Serums</label><br>
                 <input type="checkbox" class="ABC" id="moisturisers" name="Moisturisers" value="Moisturisers">
                 <label for="moisturisers"> Moisturisers</label><br>
@@ -37,16 +39,17 @@
                 <label for="Cleansers"> Masks</label><br>
                 <input type="checkbox" name="Lip Care" id="LipCare" class="ABC" value="Lip Care">
                 <label for="Lip Care">Lip Care</label><br>
-                <input type="checkbox" class="ABC" name="Exfoliators & Scrubs" id="exfoliators" value="Exfoliators  & Scrubs">
+                <input type="checkbox" class="ABC" name="Exfoliators & Scrubs" id="exfoliators"
+                    value="Exfoliators  & Scrubs">
                 <label for="Exfoliators & Scrubs">Exfoliators & Scrubs</label><br>
                 <input type="checkbox" class="ABC" name="Peels" id="peels" value="Peels">
                 <label for="Peels">Peels</label><br>
             </div>
             <div class="SkincareFormat_heading">
-            <label for="">Skincare Format</label>
-            <i class="fa fa-sort-asc" style="font-size:24px"></i>
-            <i class="fa fa-sort-desc" style="font-size:24px"></i>
-            <hr>
+                <label for="">Skincare Format</label>
+                <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i>
+                <hr>
             </div>
             <div class="SkincareFormat_checkbox">
                 <input type="checkbox" class="ABC" id="fluid" name="Fluid" value="Fluid">
@@ -135,7 +138,7 @@
                 <button id="myBtn">Read more</button>
             </div>
             <div id="categories">
-                <p>SkinCeuticals Skin Treatments</p>
+                <p id="filter">SkinCeuticals Skin Treatments</p>
                 <p>SkinCeuticals Cleansers</p>
                 <p>SkinCeuticals Face Masks</p>
                 <p>SkinCeuticals Antioxidants</p>
@@ -150,7 +153,7 @@
                     <option value="">Newews Arrivals</option>
                     <option value="Popularity"> Popularity</option>
                     <option value="Lowtohigh">Price: Low to high</option>
-                    <option value="hightoLow">Price: high to Low  </option>
+                    <option value="hightoLow">Price: high to Low </option>
                     <option value="A-Z">A-Z</option>
                     <option value="Z-A">Z-A</option>
                 </select>
@@ -162,9 +165,10 @@
                 <div class="modal-content">
                     <div class="close">+</div>
                     <h3>Select your Gift</h3>
-                    <p>Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.</p>
+                    <p>Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks
+                        last.</p>
                     <button id="shop-now">SHOP NOW</button>
-            
+
                 </div>
             </div>
         </div>
