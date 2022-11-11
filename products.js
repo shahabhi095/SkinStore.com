@@ -101,19 +101,21 @@ let productsData = [
   },
 ];
 
-const productData = async ()=>{
-    try{
-let response = await fetch("http://localhost:3000/productsData");
+const productData = async () => {
+  try {
+    let response = await fetch("http://localhost:3000/productsData");
 
-let data = await response.json();
-DisplayTable(data);
-console.log(data)
-    }catch(error){
-      console.log(error)
-    }
-}
+    let data = await response.json();
+    DisplayTable(data);
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 productData();
+
+// function for Appending data to container//
 
 const DisplayTable = (Array) => {
   let total_items = document.getElementById("total_items");
@@ -143,8 +145,13 @@ const DisplayTable = (Array) => {
 
     // append both image in image div
     Image_div.append(Image1, Image2);
+
+    let div_name = document.createElement("div");
+    div_name.className = "NmaeDiv";
+
     let Name = document.createElement("p");
     Name.innerHTML = el.name;
+    div_name.append(Name);
 
     //gift pop-up option
     let Gift = document.createElement("p");
@@ -171,13 +178,100 @@ const DisplayTable = (Array) => {
       BuyProduct(el);
     };
     // appending all data to details div
-    div.append(Image_div, Name, Gift, Rating, Price, Quick_Buy_btn);
+    div.append(Image_div, div_name, Gift, Rating, Price, Quick_Buy_btn);
 
     table.append(div);
   });
 };
 
+//for filter of data from navbar
+let filter = document.getElementById("filter");
+filter.addEventListener("click", function () {
+  filterData();
+});
+const filterData = async () => {
+  try {
+    let response = await fetch(
+      `http://localhost:3000/productsData?categories=Cleansers`
+    );
+    let data = await response.json();
 
+    DisplayTable(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// function for sort by relevence
+let SortData = document.getElementById("select");
+
+sortBy.onclick = function () {
+  SortByRelevance();
+};
+
+const SortByRelevance = async () => {
+  let value = SortData.value;
+
+  if (value == "") {
+    let res = await fetch(`http://localhost:3000/productsData`);
+    let data = await res.json();
+    DisplayTable(data);
+  } else if (value == "Popularity") {
+    let res = await fetch(
+      `http://localhost:3000/productsData?_sort=rating&_order=desc`
+    );
+    let data = await res.json();
+    DisplayTable(data);
+  } else if (value == "Lowtohigh") {
+    let res = await fetch(
+      `http://localhost:3000/productsData?_sort=price&_order=asc`
+    );
+    let data = await res.json();
+    DisplayTable(data);
+  } else if (value == "hightoLow") {
+    let res = await fetch(
+      `http://localhost:3000/productsData?_sort=price&_order=desc`
+    );
+    let data = await res.json();
+    DisplayTable(data);
+  } else if (value == "A-Z") {
+    let res = await fetch(
+      `http://localhost:3000/productsData?_sort=name&_order=asc`
+    );
+    let data = await res.json();
+    DisplayTable(data);
+  } else if (value == "Z-A") {
+    let res = await fetch(
+      `http://localhost:3000/productsData?_sort=name&_order=desc`
+    );
+    let data = await res.json();
+    DisplayTable(data);
+  }
+};
+
+// Filter from check Box
+// 1. For product type
+let CheckBox = document.getElementsByClassName("ABC");
+CheckBox.onclick = function () {
+  let value1 = document.getElementsByClassNamed("ABC").value;
+  console.log(value1);
+  console.log(value1);
+
+  FilterFromCheckBox(value1);
+};
+
+const FilterFromCheckBox = async (value1) => {
+  try {
+    let response = await fetch(
+      `http://localhost:3000/productsData?categories=${value1}`
+    );
+    let data = await response.json();
+    console.log(data);
+    DisplayTable(data);
+  } catch (error) {
+    console.log("Product not Available", error);
+  }
+};
 
 //this function will call when buy button will be clicked
 let cartArr = [];
@@ -190,13 +284,13 @@ const BuyProduct = (el) => {
 // display pop up on click on select your gift
 
 const ShowPopUp = () => {
-  document.querySelector(".bg-modal").style.display = "flex"
+  document.querySelector(".bg-modal").style.display = "flex";
 };
 
 //close fumction for closing popup
 document.querySelector(".close").addEventListener("click", function () {
   document.querySelector(".bg-modal").style.display = "none";
-})
+});
 
 // when click on shop now button of popup it shoul go to products page and heading should be updated with discount
 document.getElementById("shop-now").addEventListener("click", function () {
@@ -207,9 +301,27 @@ document.getElementById("shop-now").addEventListener("click", function () {
   console.log(heading);
   heading.innerHTML = "15% off with code SS15";
   // window.location.href = "products.html";
-
-
 });
+
+//search functionality
+let searchBtn = document.getElementById("search");
+
+searchBtn.onchange = function () {
+  SearchProduct();
+};
+
+const SearchProduct = async () => {
+  let SearchValue = document.getElementById("search").value;
+  try {
+    let res = await fetch(
+      `http://localhost:3000/productsData?q=${SearchValue}`
+    );
+    let data = await res.json();
+    DisplayTable(data);
+  } catch (error) {
+    console.log("Searched Item not Found", error);
+  }
+};
 
 // import { footer } from "./footer.js";
 
