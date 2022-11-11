@@ -177,9 +177,17 @@ localStorage.setItem("cart_items",JSON.stringify(cartArr))
 console.log(cartArr);
 
 
+let cartNumber=document.getElementById("cart")
+cartNumber.innerText=cartArr.length
 
 
-  window.location.href="products.html"
+
+  // window.location.href="products.html"
+}
+window.onload = () =>{
+  let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[];
+  let cartNumber=document.getElementById("cart");
+cartNumber.innerText=cartArr.length;
 }
 
  
