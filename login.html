@@ -6,140 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <style>
-    #form {
-        /* border: 1px solid red; */
-        width: 36%;
-        height: 650px;
-        /* margin-top: 2%; */
-        margin-left: 15%;
-        margin-top: 8%;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        ;
-    }
 
-    /* #div>h4 {
-        font-size: 30%;
-        margin-left: 30px;
-
-        width: 80%;
-        margin-top: 20%;
-
-    } */
-    #h4 {
-        font-size: 30px;
-        margin-top: 100px;
-        text-align: center;
-
-    }
-
-    #email {
-        margin-left: 30px;
-        width: 80%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        height: 30px;
-    }
-
-    #password {
-        margin-left: 30px;
-        width: 80%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        height: 30px;
-    }
-
-    #labelEamil {
-        margin-left: 30px;
-
-    }
-
-    #labelPassword {
-        margin-left: 30px;
-        width: 80%;
-    }
-
-    #sign {
-        margin-top: 5%;
-        margin-left: 30px;
-        height: 35px;
-        width: 80%;
-        color: white;
-        background-color: black;
-        font-size: 17px;
-    }
-
-    #forgetPassword {
-        color: grey;
-        margin-top: 10%;
-        margin-left: 30px;
-    }
-
-    #hr {
-        width: 36%;
-        margin-top: -6%;
-        margin-left: 30px;
-    }
-
-    #sign:hover {
-        background-color: rgb(0, 255, 242);
-        color: black;
-    }
-
-    #continue {
-        margin-left: 30px;
-        color: grey;
-        margin-top: 4%;
-    }
-
-    #facebook {
-        width: 70px;
-        margin-left: 30px;
-        /* border: 1px solid black; */
-
-    }
-
-    #divImg {
-        display: flex;
-        justify-content: space-evenly;
-        /* border: 1px solid red; */
-    }
-
-    #google {
-        width: 60px;
-        margin-left: 30px;
-        border: 1px solid black;
-    }
-
-    #both {
-        display: flex;
-
-    }
-
-    #card {
-
-        width: 30%;
-        height: 170px;
-        /* border: 1px solid red; */
-        margin-top: 8%;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        margin-left: 20px;
-        padding-left: 20px;
-    }
-
-    #register {
-        width: 80%;
-        height: 40px;
-        background-color: black;
-        color: white;
-        font-size: 17px;
-    }
-
-    #register:hover {
-        background-color: rgb(0, 255, 242);
-        color: black;
-    }
 </style>
 
 <body>
@@ -184,47 +54,33 @@
 <script>
 
 
-    document.getElementById('sign').addEventListener('click', valid)
+
 
     document.getElementById('sign').addEventListener('click', checklogin)
 
-    function valid(event) {
-        event.preventDefault()
-
-        let email = document.getElementById('email').value;
-        let password = document.getElementById('password').value;
-
-        // if (email === '' || null) {
-        //     window.alert('please enter mail id');
-        // }
-        // else if (password === '' || null) {
-        //     window.alert('please enter your password');
-        // }
-        // else {
-        //     window.alert('Thanks for sign in');
-        // }
-        localStorage.setItem('email1', email)
-        // localStorage.setItem('password1', JSON.stringify(password))
-        localStorage.setItem('password1', password)
-    }
     function checklogin() {
 
 
         let email = document.getElementById('email').value;
         let password = document.getElementById('password').value;
 
-        // let email1 = JSON.parse(localStorage.getItem('emai1'))
-        // let password1 = JSON.parse(localStorage.getItem('password1'))
+        // let email1 = JSON.parse(localStorage.getItem('email1')) || []
+        // let password1 = JSON.parse(localStorage.getItem('password1')) || []
 
 
 
-        let email1 = localStorage.getItem('emai1')
-        let password1 = localStorage.getItem('password1')
 
-        if (email == email1) {
-            window.alert("login successful")
+
+        let email1 = localStorage.getItem('email1') || []
+        let password1 = localStorage.getItem('password1') || []
+        // console.log(password1);
+
+        if (email == email1 && password == password1) {
+            window.location.href = "index.html"
+            alert("login successful")
+
         } else {
-            window.alert("Email or Password is not valid")
+            alert("Email or Password is not valid")
         }
 
 
