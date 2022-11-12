@@ -1,0 +1,123 @@
+#form {
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 900px;
+    margin: auto;
+    margin-top: 8%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding-right: 35px;
+}
+
+/* 
+    #image1 {
+        margin-left: 30px;
+        width: 50%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        height: 20px;
+    } */
+
+
+
+
+#head {
+    font-size: 45px;
+    padding-left: 60px;
+    /* text-align: center; */
+    width: 80%;
+    padding-top: 20px;
+    color: #800000;
+    height: 50px;
+}
+
+
+
+#id {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#image1 {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#image2 {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#name {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#rating {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#price {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#brand {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#brand_imag {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#category {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#create_btn {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #FF00FF;
+}
+
+#create_btn:hover {
+    background-color: rgb(0, 255, 242);
+    color: black;
+    font-size: 20px;
+
+}
