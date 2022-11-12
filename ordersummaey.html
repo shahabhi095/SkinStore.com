@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="ordersummary.css" />
+  </head>
+  <body>
+    <h2>Order Summary</h2>
+    <div id="address_container">
+      <div id="client_address">
+        <h2>Delivery Address</h2>
+        <h4 id="client_name"></h4>
+        <p id="client_house_no"></p>
+        <p id="client_house_area1"></p>
+        <p id="client_house_area2"></p>
+        <p id="city"></p>
+        <p id="state"></p>
+        <p id="country"></p>
+        <h4 id="client_mobile_no"></h4>
+      </div>
+      <div id="totalinfo">
+        <div id="order_no"></div>
+        <div id="total_item"></div>
+        <div id="total_price"></div>
+      </div>
+    </div>
+    <div id="status">
+      <ol class="progtrckr" data-progtrckr-steps="5">
+        <li class="progtrckr-done">Order Processing</li>
+        <!--
+         -->
+        <li class="progtrckr-done">Pre-Production</li>
+        <!--
+         -->
+        <li class="progtrckr-done">In Production</li>
+        <!--
+         -->
+        <li class="progtrckr-todo">Shipped</li>
+        <!--
+         -->
+        <li class="progtrckr-todo">Delivered</li>
+      </ol>
+    </div>
+    <div id="order_summary_products"></div>
+  </body>
+</html>
+<script src="ordersummary.js"></script>

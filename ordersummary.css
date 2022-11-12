@@ -1,0 +1,200 @@
+/* order status */
+
+body {
+  background-color: #f1f3f6;
+}
+#status {
+  border: 0px solid red;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+ol.progtrckr {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ol.progtrckr li {
+  display: inline-block;
+  text-align: center;
+  line-height: 3.5em;
+}
+
+ol.progtrckr[data-progtrckr-steps="2"] li {
+  width: 49%;
+}
+ol.progtrckr[data-progtrckr-steps="3"] li {
+  width: 33%;
+}
+ol.progtrckr[data-progtrckr-steps="4"] li {
+  width: 24%;
+}
+ol.progtrckr[data-progtrckr-steps="5"] li {
+  width: 19%;
+}
+ol.progtrckr[data-progtrckr-steps="6"] li {
+  width: 16%;
+}
+ol.progtrckr[data-progtrckr-steps="7"] li {
+  width: 14%;
+}
+ol.progtrckr[data-progtrckr-steps="8"] li {
+  width: 12%;
+}
+ol.progtrckr[data-progtrckr-steps="9"] li {
+  width: 11%;
+}
+
+ol.progtrckr li.progtrckr-done {
+  color: black;
+  border-bottom: 4px solid yellowgreen;
+}
+ol.progtrckr li.progtrckr-todo {
+  color: silver;
+  border-bottom: 4px solid silver;
+}
+
+ol.progtrckr li:after {
+  content: "\00a0\00a0";
+}
+ol.progtrckr li:before {
+  position: relative;
+  bottom: -2.5em;
+  float: left;
+  left: 50%;
+  line-height: 1em;
+}
+ol.progtrckr li.progtrckr-done:before {
+  content: "\2713";
+  color: white;
+  background-color: yellowgreen;
+  height: 2.2em;
+  width: 2.2em;
+  line-height: 2.2em;
+  border: none;
+  border-radius: 2.2em;
+}
+ol.progtrckr li.progtrckr-todo:before {
+  content: "\039F";
+  color: silver;
+  background-color: white;
+  font-size: 2.2em;
+  bottom: -1.2em;
+}
+
+/* order status  ends*/
+
+/* address_container */
+
+#address_container {
+  border: 0px solid black;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#client_address {
+  border: 0px solid pink;
+  width: 70%;
+}
+#totalinfo {
+  border: 0px solid black;
+  width: 30%;
+  text-align: center;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  height: 150px;
+  margin-top: 12%;
+}
+#total_item {
+  border: 0px solid black;
+}
+#total_price {
+  border: 0px solid black;
+}
+
+#client_house_no {
+  margin-top: -2%;
+}
+#client_house_area1 {
+  margin-top: -2%;
+}
+#client_house_area2 {
+  margin-top: -2%;
+}
+#city {
+  margin-top: -2%;
+}
+#state {
+  margin-top: -2%;
+}
+#country {
+  margin-top: -2%;
+}
+#client_mobile_no {
+  margin-top: -1%;
+}
+/* {
+    "country": "INDIA",
+    "fullname": "Shivam Chaudhary",
+    "zipcode": "226005",
+    "companyname": "NA",
+    "address1": "566/87 Jai Prakash Nagar",
+    "address2": "Alambagh",
+    "houseno": "87",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "mobileno": "7275262500",
+    "id": 1
+  } */
+
+#order_summary_products {
+  border: 0px solid blue;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.card {
+  border: 0px solid green;
+  display: flex;
+  /* justify-content: space-around;
+  justify-items: center;
+  text-align: center; */
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.img_div {
+  width: 33.33%;
+  border: 0px solid red;
+  text-align: center;
+}
+.img_div img {
+  width: 30%;
+}
+.name_div {
+  border: 0px solid red;
+  width: 33.33%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.price_div {
+  border: 0px solid red;
+  width: 33.33%;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
