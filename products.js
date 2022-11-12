@@ -4,11 +4,14 @@
 // nav_div.innerHTML = navbar()
 
 //Read More less button
+var moreText = document.getElementById("more");
+moreText.style.display = "none";
+
 let readMoreLess_btn = document.getElementById("myBtn");
 readMoreLess_btn.onclick = () => {
   ReadMoreLess();
 };
-
+dots.style.display = "none";
 const ReadMoreLess = () => {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -27,6 +30,8 @@ const ReadMoreLess = () => {
     btnText.style = "border: 2px solid black; width:100%;  text-align: left;";
   }
 };
+
+let InitialData;
 
 let productsData = [
   {
@@ -101,11 +106,13 @@ let productsData = [
   },
 ];
 
+let A = 0;
 const productData = async () => {
   try {
     let response = await fetch("http://localhost:3000/productsData");
 
     let data = await response.json();
+    A = data;
     DisplayTable(data);
     console.log(data);
   } catch (error) {
@@ -113,6 +120,7 @@ const productData = async () => {
   }
 };
 
+console.log("datafind", A);
 productData();
 
 // function for Appending data to container//
@@ -252,22 +260,31 @@ const SortByRelevance = async () => {
 // Filter from check Box
 // 1. For product type
 let CheckBox = document.getElementsByClassName("ABC");
-CheckBox.onclick = function () {
-  let value1 = document.getElementsByClassNamed("ABC").value;
-  console.log(value1);
-  console.log(value1);
+let count = 0;
+for (let i = 0; i < CheckBox.length; i++) {
+  CheckBox[i].onchange = function () {
+    let value1 = CheckBox[i].value;
+    console.log(value1);
 
-  FilterFromCheckBox(value1);
-};
+    if (CheckBox[i].checked) {
+      FilterFromCheckBox(value1);
+      CheckBox[i].style = " background-color: black;";
+    }
+  };
+}
 
+let NewArr = [];
 const FilterFromCheckBox = async (value1) => {
   try {
     let response = await fetch(
       `http://localhost:3000/productsData?categories=${value1}`
     );
     let data = await response.json();
-    console.log(data);
-    DisplayTable(data);
+    for (let j = 0; j < data.length; j++) {
+      NewArr.push(data[j]);
+    }
+    console.log(NewArr);
+    DisplayTable(NewArr);
   } catch (error) {
     console.log("Product not Available", error);
   }
