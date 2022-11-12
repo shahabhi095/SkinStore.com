@@ -1,3 +1,8 @@
+import{header,footer} from './component.js';
+document.getElementById("header").innerHTML=header();
+document.getElementById("footer").innerHTML=footer();
+
+
 let carousel_div=document.getElementById("carousel");
 
 

@@ -38,6 +38,7 @@ header>nav{
 #srch{
     height: 40px;
     width: 480px;
+    border: none;
 }
 
 #nav1+ul{
@@ -178,7 +179,15 @@ background-color: transparent;
  #acnt>.account_menu1>ul>li>a{
     color: black;
  }
+.account_menu1 li{
+    padding: 10px;
+}
 
+.account_menu1 li:hover{
+    background-color: gray;
+
+    transition: 1s;
+}
  .cartnumber{
     position: relative;
 
@@ -195,4 +204,20 @@ background-color: transparent;
     display: flex;
     background-color: black;
     color: white;
+ }
+
+ #srchbox{
+    border: 1px solid black;
+    display: flex;
+    /* align-items: center; */
+    /* margin: auto; */
+
+ }
+
+ #srchbox>i{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
