@@ -15,13 +15,14 @@
 
 #refine {
     width: 25%;
-    border: 1px solid blue;
+    border: 0px solid blue;
 
 
 }
 
 #brief_intro {
     width: 100%;
+
 }
 
 #product {
@@ -34,7 +35,7 @@
 #product_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
+    gap: 20px;
 }
 
 .product_img {
