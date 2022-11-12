@@ -1,0 +1,191 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* body {
+    background-image: linear-gradient(45deg, #b595b2, #d7a9c4, #D4AFCD, #db8fe1);
+    background-size: 800%;
+    animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+} */
+
+.t {
+    margin: auto;
+    width: 98%;
+    margin-bottom: 3%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 10px;
+}
+
+.t h1 {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.t button {
+    height: 55px;
+    margin-top: 1.5%;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 8px;
+    word-spacing: 2px;
+}
+
+.t button:hover {
+    padding: 1px 20px;
+    cursor: pointer;
+}
+
+.t button p {
+    opacity: 0.7;
+}
+
+.row {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.row>h5:nth-child(1) {
+    margin-left: 5%;
+}
+
+.row div {
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#store div {
+    width: 91%;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+#store div>div {
+    width: 10%;
+}
+
+#store div img {
+    height: 150px;
+}
+
+#store div p {
+    margin-left: -4%;
+    width: 35%;
+    opacity: 0.6;
+}
+
+#store div h3 {
+    margin-left: 3%;
+    opacity: 0.7;
+}
+
+.b {
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b button:nth-child(1) {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.b button:nth-child(1):hover {
+    cursor: pointer;
+    color: white;
+}
+
+.b button:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    z-index: -1;
+
+    border-radius: 0 0 50% 50%;
+}
+
+.b button:nth-child(1):hover::before {
+    height: 180%;
+}
+
+.b button:nth-child(1) p {
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.b button:nth-child(2) {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.b button:nth-child(2):hover {
+    padding: 0px 15px;
+}
+
+.b button:nth-child(2) p {
+    opacity: 0.6;
+}
+
+
+.bimg {
+    margin-top: 2%;
+    height: 90px;
+    width: 30%;
+    margin-left: 55%;
+}
+
+#store+div {
+    margin: auto;
+    width: 90%;
+    margin-top: 1%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+#store+div p {
+    width: 10%;
+    margin-left: 75%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}

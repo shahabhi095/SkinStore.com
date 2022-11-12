@@ -1,7 +1,30 @@
 
+// let datafromLS = JSON.parse(localStorage.getItem('addToCart'));
+let datafromLS;
+let sum = [];
+const cartDataServer = async () => {
+    let res = await fetch(`http://localhost:3000/cartProducts`)
+    data = await res.json();
+    datafromLS = data
+    //console.log(datafromLS)
+    append(datafromLS)
+    datafromLS.forEach((el) => {
+        sum.push(+el.price)
+    })
+
+    let total = document.getElementById('total')
+    total.innerText = grandtotal(sum).toFixed(2);
+}
+cartDataServer()
+// console.log(datafromLS)
+//console.log(sum)
+
+
 let store = document.getElementById('store');
 
-let sum = 0;
+let nsum = grandtotal(sum);
+let total = document.getElementById('total')
+total.innerText = nsum.toFixed(2);
 
 const append = (data) => {
 
@@ -16,10 +39,7 @@ const append = (data) => {
         title.innerText = el.name;
 
         let price = document.createElement('h3');
-        let s = document.createElement('span');
-        s.innerText = '$';
-        price.innerHTML = s;
-        price.innerText = el.price;
+        price.innerText = `$ ${el.price}`;
 
 
         let div2 = document.createElement('div');
@@ -27,12 +47,19 @@ const append = (data) => {
         let sub = document.createElement('span');
         sub.innerHTML = '<i class="fa-solid fa-minus"></i>';
         sub.onclick = () => {
+            total.innerText = null;
             if (qty.innerText == 1) {
+                nsum = grandtotal(sum);
+                total = document.getElementById('total')
+                total.innerText = nsum.toFixed(2);
                 return;
             } else {
                 qty.innerText--;
-                subtotal.innerText = Number(price.innerText) * qty.innerText;
-                sum += Number(subtotal.innerText);
+                subtotal.innerText = +el.price * qty.innerText;
+                sum.pop(+el.price);
+                nsum = grandtotal(sum);
+                total = document.getElementById('total')
+                total.innerText = nsum.toFixed(2);
             }
         }
 
@@ -42,21 +69,24 @@ const append = (data) => {
         let plus = document.createElement('span');
         plus.innerHTML = '<i class="fa-solid fa-plus"></i>';
         plus.onclick = () => {
+            total.innerText = null;
             qty.innerText++;
-            subtotal.innerText = Number(price.innerText) * qty.innerText;
-            sum += Number(subtotal.innerText);
+            subtotal.innerText = +el.price * qty.innerText;
+            sum.push(+el.price);
+            nsum = grandtotal(sum);
+            total = document.getElementById('total')
+            total.innerText = nsum.toFixed(2);
         }
 
         div2.append(sub, qty, plus);
 
         let subtotal = document.createElement('h3');
-        subtotal.innerText = price.innerText;
-        // sum += Number(subtotal.innerText);
+        subtotal.innerText = +el.price;
 
         let remove = document.createElement('span');
         remove.innerHTML = '<i class="fa-solid fa-xmark"></i>';
         remove.addEventListener('click', () => {
-            removeFun(i);
+            removeFun(el.id);
         })
 
         div.append(img, title, price, div2, subtotal, remove);
@@ -64,14 +94,33 @@ const append = (data) => {
     })
 
 }
+// append(datafromLS);
 
-let datafromLS = JSON.parse(localStorage.getItem('addToCart'));
-append(datafromLS);
+function grandtotal(s) {
+    let nsum = 0;
+    for (let i = 0; i < s.length; i++) {
+        nsum += s[i];
+    }
+    return nsum;
+}
 
 
-let total = document.getElementById('total')
-total.innerText = + sum;
+async function removeFun(i) {
+    console.log(i)
 
-function removeFun(i) {
-    console.log(i);
+    let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    });
+    let data = await res.json();
+    console.log(data);
+
+
+    //let data = JSON.parse(localStorage.getItem("addToCart")) || [];
+    //data.splice(i, 1);
+    //localStorage.setItem("addToCart", JSON.stringify(data));
+    // append(data);
+    // window.location.reload();
 }
