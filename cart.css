@@ -2,6 +2,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(255, 253, 250);
+}
 
 /* body {
     background-image: linear-gradient(45deg, #b595b2, #d7a9c4, #D4AFCD, #db8fe1);
@@ -19,25 +22,32 @@
     }
 } */
 
-.t {
+.tr {
     margin: auto;
-    width: 98%;
+    width: 97%;
+    margin-top: 1%;
     margin-bottom: 3%;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 10px;
+    box-shadow: rgb(255, 222, 222) 20px 3px 20px 0px;
 }
 
-.t h1 {
+.tr h1 {
     letter-spacing: 2px;
     font-weight: 400;
     font-size: 45px;
+    transition: 2s;
 }
 
-.t button {
+.tr h1:hover {
+    padding: 0px 10px;
+}
+
+.tr button {
     height: 55px;
     margin-top: 1.5%;
+    padding: 5px 10px;
     color: white;
     background-color: black;
     transition: 0.5s;
@@ -45,18 +55,19 @@
     word-spacing: 2px;
 }
 
-.t button:hover {
-    padding: 1px 20px;
+.tr button:hover {
+    padding: 1px 25px;
     cursor: pointer;
 }
 
-.t button p {
+.tr button p {
     opacity: 0.7;
 }
 
 .row {
     margin: auto;
     width: 90%;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
@@ -93,6 +104,12 @@
 
 #store div img {
     height: 150px;
+    transition: 0.2s;
+
+}
+
+#store div img:hover {
+    height: 155px;
 }
 
 #store div p {
@@ -117,17 +134,18 @@
 .b button:nth-child(1) {
     background: none;
     border: none;
-    padding: 5px 10px;
-    border: 1px solid black;
+    padding: 15px 25px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.3s;
     position: relative;
     overflow: hidden;
+    background-color: rgb(38, 38, 38);
+    color: white;
 }
 
 .b button:nth-child(1):hover {
     cursor: pointer;
-    color: white;
+    color: rgb(139, 77, 77);
 }
 
 .b button:nth-child(1)::before {
@@ -136,9 +154,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: black;
-    z-index: -1;
-
+    background: rgb(255, 231, 231);
     border-radius: 0 0 50% 50%;
 }
 
@@ -177,15 +193,22 @@
 #store+div {
     margin: auto;
     width: 90%;
+    padding: 15px;
     margin-top: 1%;
+    display: flex;
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
 
 #store+div p {
-    width: 10%;
-    margin-left: 75%;
+    width: 20%;
+    margin-left: 77%;
+    display: flex;
     font-size: 18px;
     letter-spacing: 1px;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+#store+div p span:nth-child(1) {
+    margin-left: 15%;
 }
