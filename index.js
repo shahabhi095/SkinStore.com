@@ -3,6 +3,11 @@ document.getElementById("header").innerHTML=header();
 document.getElementById("footer").innerHTML=footer();
 
 
+
+
+
+
+
 let carousel_div=document.getElementById("carousel");
 
 
@@ -126,6 +131,30 @@ carousel();
 
 
 
+console.log()
+
+let searchBtn = document.getElementById("sricon");
+//search functionality
+searchBtn.onclick = function () {
+  SearchProduct(searchBtn);
+};
+
+const SearchProduct = async () => {
+  document.getElementById("shopCat").innerHTML =null;
+  document.getElementById("carousel").innerHTML=null;
+  let SearchValue = document.getElementById("srch").value;
+  try {
+    let res = await fetch(
+      `http://localhost:3000/productsData?q=${SearchValue}`
+    );
+    let data = await res.json();
+    console.log(data);
+    appendData(data);
+  } catch (error) {
+    console.log("Searched Item not Found", error);
+  }
+};
+
 const pData =async()=>{
 try{
 let res = await fetch(` http://localhost:3000/HomeproductsData`)
@@ -147,7 +176,7 @@ pData()
 const appendData =(arr)=>{
 
     let productsInfo=document.getElementById("details");
-
+productsInfo.innerHTML =null;
     arr.forEach(function(el){
      let div= document.createElement('div');
 
@@ -171,6 +200,7 @@ const appendData =(arr)=>{
 
      let btn1 = document.createElement('button');
      btn1.innerText="Shop Now"
+     btn1.className = "ShopNowBtn"
      btn1.addEventListener("click", function() {
       
       mybtn1(el) 
@@ -191,25 +221,51 @@ const appendData =(arr)=>{
 // appendData();
 
 
-function mybtn1(el){
-let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
-cartArr.push(el);
-localStorage.setItem("cart_items",JSON.stringify(cartArr))
+ const mybtn1 = async(el)=>{
+// let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
+// cartArr.push(el);
+// localStorage.setItem("cart_items",JSON.stringify(cartArr))
 
-console.log(cartArr);
+// console.log(cartArr);
+let res = await fetch(`http://localhost:3000/cartProducts`, {
+  method: "POST",
+  body: JSON.stringify(el),
 
+  headers: {
+    "Content-Type": " application/json",
+  },
+});
 
-let cartNumber=document.getElementById("cart")
-cartNumber.innerText=cartArr.length
-
-
-
-  window.location.href="products.html"
+  let data = await res.json();
+  console.log("data", data);
+   window.location.href = "products.html";
 }
-window.onload = () =>{
-  let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[];
-  let cartNumber=document.getElementById("cart");
-cartNumber.innerText=cartArr.length;
-}
+// let cartNumber=document.getElementById("cart")
+// cartNumber.innerText=cartArr.length
+
+
 
  
+
+// window.onload = () =>{
+
+//   // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[];
+//   // let cartNumber=document.getElementById("cart");
+// //cartNumber.innerText=cartArr.length;
+// }
+
+
+const ItemsInCart = async ()=>{
+  try{
+let res = await fetch(`http://localhost:3000/cartProducts`);
+let data = await res.json();
+let cartNumber = document.getElementById("cart");
+cartNumber.innerText = data.length;
+console.log(data)
+  }catch(error){
+    console.log(error)
+  }
+}
+ItemsInCart();
+
+

@@ -61,7 +61,11 @@
     z-index: -1;
 
 }
+.product_details{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    padding: 10px;
 
+}
 .product_details:hover .Image2 {
     width: 100%;
     opacity: 1;

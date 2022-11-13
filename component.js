@@ -17,9 +17,11 @@ const header =()=>{
             
                 <div class="account_menu1">
                     <ul>
-                        <div class="btn2"><li> <button>LOGIN</button></li>
-                            <li><button>REGISTER</button></div>
-                        
+                        <div class="btn2"> <a href="login.html"><li> <button>LOGIN</button></li> </a>
+                           <a href="register.html"> <li><button>REGISTER</button></a> 
+                        </div>
+    
+                 
                         
                         </li>
                         <li><a href="#">Wish List</a></li>
@@ -39,7 +41,7 @@ const header =()=>{
             <div id="cart">
             
             </div>
-            <a href=""><h3> <i class="fa-solid fa-cart-shopping"></i>Cart</h3></a>
+            <a href="cart.html"><h3> <i class="fa-solid fa-cart-shopping"></i>Cart</h3></a>
         </div>
            
             
@@ -145,7 +147,7 @@ const header =()=>{
     </nav>
 </header>
 
-`
+`;
 }
 
 const footer =()=>{
@@ -156,7 +158,7 @@ const footer =()=>{
         <h4>Connect with us</h4>
     </div>
     <div class="img">
-        <button><p>SIGN UP</p></button>
+     <a href="register.html"><button><p>SIGN UP</p></button></a> 
         <div>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -215,7 +217,7 @@ const footer =()=>{
             <img src="https://www.orderuganda.com/images/paypal1.png" alt="">
         </div>
     </div>
-    </footer>`
+    </footer>`;
 }
 
 export{header , footer}

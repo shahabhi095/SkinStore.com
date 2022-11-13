@@ -1,10 +1,17 @@
 
 // let datafromLS = JSON.parse(localStorage.getItem('addToCart'));
+
+import { header, footer } from "./component.js";
+document.getElementById("header").innerHTML = header();
+document.getElementById("footer").innerHTML = footer();
+
+
+
 let datafromLS;
 let sum = [];
 const cartDataServer = async () => {
     let res = await fetch(`http://localhost:3000/cartProducts`)
-    data = await res.json();
+   let data = await res.json();
     datafromLS = data
     //console.log(datafromLS)
     append(datafromLS)
@@ -124,3 +131,16 @@ async function removeFun(i) {
     // append(data);
     // window.location.reload();
 }
+
+const ItemsInCart = async () => {
+  try {
+    let res = await fetch(`http://localhost:3000/cartProducts`);
+    let data = await res.json();
+    let cartNumber = document.getElementById("cart");
+    cartNumber.innerText = data.length;
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+ItemsInCart();

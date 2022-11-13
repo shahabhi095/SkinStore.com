@@ -2,6 +2,10 @@
 
 // let nav_div = document.getElementById("navbar")
 // nav_div.innerHTML = navbar()
+import { header, footer } from "./component.js";
+document.getElementById("header").innerHTML = header();
+document.getElementById("footer").innerHTML = footer();
+
 
 //Read More less button
 var moreText = document.getElementById("more");
@@ -292,11 +296,25 @@ const FilterFromCheckBox = async (value1) => {
 
 //this function will call when buy button will be clicked
 let cartArr = [];
-const BuyProduct = (el) => {
-  cartArr.push(el);
-  localStorage.setItem("addToCart", JSON.stringify(cartArr));
-  // window.location.href = "cart.html"
-};
+ const BuyProduct = async (el) => {
+   // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
+   // cartArr.push(el);
+   // localStorage.setItem("cart_items",JSON.stringify(cartArr))
+
+   // console.log(cartArr);
+   let res = await fetch(`http://localhost:3000/cartProducts`, {
+     method: "POST",
+     body: JSON.stringify(el),
+
+     headers: {
+       "Content-Type": " application/json",
+     },
+   });
+
+   let data = await res.json();
+   console.log("data", data);
+   window.location.href = "products.html";
+ };
 
 // display pop up on click on select your gift
 
@@ -321,14 +339,14 @@ document.getElementById("shop-now").addEventListener("click", function () {
 });
 
 //search functionality
-let searchBtn = document.getElementById("search");
+let searchBtn = document.getElementById("sricon");
 
-searchBtn.onchange = function () {
+searchBtn.onclick = function () {
   SearchProduct();
 };
 
 const SearchProduct = async () => {
-  let SearchValue = document.getElementById("search").value;
+  let SearchValue = document.getElementById("srch").value;
   try {
     let res = await fetch(
       `http://localhost:3000/productsData?q=${SearchValue}`
@@ -344,3 +362,15 @@ const SearchProduct = async () => {
 
 // let footer_div = document.getElementById("footer");
 // footer_div.innerHTML = footer();
+const ItemsInCart = async () => {
+  try {
+    let res = await fetch(`http://localhost:3000/cartProducts`);
+    let data = await res.json();
+    let cartNumber = document.getElementById("cart");
+    cartNumber.innerText = data.length;
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+ItemsInCart();
