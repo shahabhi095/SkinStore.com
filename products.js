@@ -370,7 +370,7 @@ const ItemsInCart = async () => {
     cartNumber.innerText = data.length;
     console.log(data);
   } catch (error) {
-    console.log("error",error);
+    console.log("error find",error);
   }
 };
 ItemsInCart();
