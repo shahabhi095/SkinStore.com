@@ -26,9 +26,14 @@
 
  }
 
- #shopCat>a img{
-width: 80%;
-display: flex;
+ .shopcatcard{
+   width: 80%;
+   margin: auto;
+ }
+
+ #shopCat img{
+width: 100%;
+/* display: flex; */
 margin-left: auto;
  }
 
@@ -53,6 +58,8 @@ margin-left: auto;
     margin: auto;
     text-align: center;
     color: rgb(91,50,51);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px ;
  }
 
  #details img{
@@ -61,6 +68,12 @@ margin-left: auto;
    border-radius: 140px;
     width: 60%;
     text-align: center;
+    transition: 0.5s;
+ }
+
+ #details img:hover{
+   width: 62%;
+   
  }
 
  #details h2{
@@ -107,112 +120,7 @@ margin-left: auto;
  }
 
 
- * {
-   margin: 0;
-}
-
-#line {
-   margin-top: 2%;
-}
-
-.t {
-   margin-top: 2%;
-   margin-left: 30px;
-   width: 55%;
-   display: flex;
-   justify-content: space-between;
-   letter-spacing: 0.5px;
-   font-size: 17px;
-   opacity: 0.9;
-}
-
-.img {
-   margin-top: 1%;
-   margin-left: 40px;
-   height: 50px;
-   width: 58%;
-   display: flex;
-   justify-content: space-between;
-}
-
-.img button {
-   width: 100px;
-   background-color: black;
-   color: white;
-   border-radius: 8px;
-}
-
-.img button:hover {
-   transition: 0.3s ease-in-out;
-   width: 110px;
-   cursor: pointer;
-}
-
-.img button p {
-   font-size: 17px;
-   opacity: 0.7;
-}
-
-.img div {
-   width: 20%;
-   display: flex;
-   justify-content: space-between;
-}
-
-.container {
-   margin: auto;
-   width: 95%;
-   margin-top: 3%;
-   display: flex;
-   gap: 230px;
-}
-
-#l {
-   width: 170%;
-   margin-bottom: 6%;
-   opacity: 0.7;
-}
-
-.container div h4 {
-   font-size: 19px;
-   opacity: 0.8;
-   letter-spacing: 0.5px;
-   margin-bottom: 8%;
-}
-
-.container div p {
-   font-size: 17px;
-   line-height: 40px;
-   opacity: 0.6;
-   word-spacing: 1px;
-}
-
-.last {
-   margin-top: 2%;
-   width: 90%;
-   display: flex;
-   justify-content: space-between;
-}
-
-.last div:nth-child(1) {
-   margin-left: 3%;
-   line-height: 40px;
-   width: 15%;
-}
-
-.last div:nth-child(1) h1 {
-   letter-spacing: 5px;
-   opacity: 0.8;
-}
-
-.last div:nth-child(1) p {
-   opacity: 0.6;
-}
-
-.last div:nth-child(2) img {
-   height: 100px;
-   width: 350px;
-}
+ 
 
 
 #box3{
@@ -223,11 +131,19 @@ margin-top: 20px;
 border: 0px solid red;
 width: 100%;
 height: 250px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
 #box3 img{
+
    width: 12%;
+   opacity: 0.7;
+   
+}
+
+#box3 img:hover{
+   opacity: 1;
 }
 
 #box1{
@@ -238,4 +154,10 @@ height: 250px;
    width: 100%;
    height: 50px;
    background-color:rgb(243,243,242) ;
+}
+#box3 img{
+   display: grid;
+   align-content: space-between;
+   border: 0px solid blue;
+   
 }

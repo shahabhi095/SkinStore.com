@@ -17,7 +17,7 @@ const header =()=>{
             
                 <div class="account_menu1">
                     <ul>
-                        <div class="btn2"> <a href="login.html"><li> <button>LOGIN</button></li> </a>
+                        <div class="btn2"> <a href="login.html"><li> <button id="lgn" >LOGIN</button></li> </a>
                            <a href="register.html"> <li><button>REGISTER</button></a> 
                         </div>
     
@@ -158,8 +158,12 @@ const footer =()=>{
         <h4>Connect with us</h4>
     </div>
     <div class="img">
+
+     <div id="fspbtn">
+
      <a href="register.html"><button><p>SIGN UP</p></button></a> 
-        <div>
+     </div>
+        <div id="sslogo">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -211,6 +215,7 @@ const footer =()=>{
         <div>
             <h1>THG</h1>
             <p>2022 &copy; The Hut.com Ltd.</p>
+            <a href="./create.html"><button id="prdts" >Add Products</button></a>
         </div>
         <div>
             <h4>Pay securely with</h4>
