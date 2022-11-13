@@ -8,10 +8,10 @@
     <title>SkinCare</title>
     <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="./navbar.css">
-   
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"   />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,12 +22,14 @@
     <button id="SearchButton">Search</button> -->
     <div id="conatiner">
         <div id="refine">
+
             <h3>Refine</h3>
+            <div id="clearecheck"></div>
             <hr>
             <div class="ProductType">
-                <label for="">Skincare Product Type</label>
-                <i class="fa fa-sort-asc" style="font-size:24px"></i>
-                <i class="fa fa-sort-desc" style="font-size:24px"></i>
+                <label for="" style="font-weight: 600;">Skincare Product Type</label>
+                <!-- <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i> -->
                 <hr>
             </div>
             <div>
@@ -37,8 +39,8 @@
                 <label for="moisturisers"> Moisturisers</label><br>
                 <input type="checkbox" class="ABC" id="cleansers" name="Cleansers" value="Cleansers">
                 <label for="Cleansers"> Cleansers</label><br>
-                <input type="checkbox" class="ABC" id="toners" name="Toners" value="Toners">
-                <label for="serums"> Toners</label><br>
+                <input type="checkbox" class="ABC" id="toners" name="Toners" value="AHA">
+                <label for="serums">AHA</label><br>
                 <input type="checkbox" class="ABC" id="EyeCare" name="Eye Care" value="Eye Care">
                 <label for="moisturisers"> Eye Care</label><br>
                 <input type="checkbox" class="ABC" id="masks" name="Masks" value="Masks">
@@ -48,18 +50,19 @@
                 <input type="checkbox" class="ABC" name="Exfoliators & Scrubs" id="exfoliators"
                     value="Exfoliators  & Scrubs">
                 <label for="Exfoliators & Scrubs">Exfoliators & Scrubs</label><br>
-                <input type="checkbox" class="ABC" name="Peels" id="peels" value="Peels">
-                <label for="Peels">Peels</label><br>
+                <input type="checkbox" class="ABC" name="Peels" id="peels" value="Hair">
+                <label for="Hair">Hair</label><br>
+                <hr>
             </div>
-            <div class="SkincareFormat_heading">
+            <div class="SkincareFormat_heading" style="font-weight: 700;">
                 <label for="">Skincare Format</label>
-                <i class="fa fa-sort-asc" style="font-size:24px"></i>
-                <i class="fa fa-sort-desc" style="font-size:24px"></i>
+                <!-- <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i> -->
                 <hr>
             </div>
             <div class="SkincareFormat_checkbox">
-                <input type="checkbox" class="ABC" id="fluid" name="Fluid" value="Fluid">
-                <label for="Fluid"> Fluid</label><br>
+                <input type="checkbox" class="ABC" id="fluid" name="Fluid" value="SkinCeuticals Cleansers">
+                <label for="SkinCeuticals Cleansers"> Fluid</label><br>
                 <input type="checkbox" class="ABC" id="cream" name="Cream" value="Cream">
                 <label for="Cream"> Cream</label><br>
                 <input type="checkbox" class="ABC" id="gel" name="Gel" value="Gel">
@@ -76,11 +79,12 @@
                 <label for="Mist"> Mist</label><br>
                 <input type="checkbox" class="ABC" id="oil" name="Oil" value="Oil">
                 <label for="Oil"> Oil</label><br>
+                <hr>
             </div>
             <div class="SkinType_heading">
-                <label for="">Skin Type</label>
-                <i class="fa fa-sort-asc" style="font-size:24px"></i>
-                <i class="fa fa-sort-desc" style="font-size:24px"></i>
+                <label style="font-weight: 700;" for="">Skin Type</label>
+                <!-- <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i> -->
                 <hr>
             </div>
             <div class="SkinType_checkbox">
@@ -98,14 +102,15 @@
                 <label for="Oily"> Oily</label><br>
                 <input type="checkbox" class="ABC" id="sensitive" name="Sensitive" value="Sensitive">
                 <label for="Sensitive"> Sensitive</label><br>
-            </div>
-            <div class="SPFContent_heading">
-                <label for="">Skin Type</label>
-                <i class="fa fa-sort-asc" style="font-size:24px"></i>
-                <i class="fa fa-sort-desc" style="font-size:24px"></i>
                 <hr>
             </div>
-            <div class="SPFContent_checkbox">
+            <div class="SPFContent_heading">
+                <label style="font-weight: 700;" for="">Skin Type</label>
+                <!-- <i class="fa fa-sort-asc" style="font-size:24px"></i>
+                <i class="fa fa-sort-desc" style="font-size:24px"></i> -->
+                <hr>
+            </div>
+            <div class="SPFContent_checkbox" style="margin-top:10px ;">
                 <input type="checkbox" class="ABC" id="low PF" name="Low SPF" value="Low SPF">
                 <label for="Low SPF"> Low SPF</label><br>
                 <input type="checkbox" class="ABC" id="noSPF" name="No SPF" value="No SPF">
@@ -156,7 +161,7 @@
                 <label for="">Sort By:</label>
                 <select name="" id="select">
 
-                    <option value="">Newews Arrivals</option>
+                    <option value="" id="starting">Newews Arrivals</option>
                     <option value="Popularity"> Popularity</option>
                     <option value="Lowtohigh">Price: Low to high</option>
                     <option value="hightoLow">Price: high to Low </option>
@@ -180,7 +185,7 @@
         </div>
     </div>
 
-<div id="footer"></div>
+    <div id="footer"></div>
 </body>
 
 </html>
