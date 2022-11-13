@@ -6,7 +6,6 @@ import { header, footer } from "./component.js";
 document.getElementById("header").innerHTML = header();
 document.getElementById("footer").innerHTML = footer();
 
-
 //Read More less button
 var moreText = document.getElementById("more");
 moreText.style.display = "none";
@@ -118,7 +117,7 @@ const productData = async () => {
     let data = await response.json();
     A = data;
     DisplayTable(data);
-    console.log(data);
+    //console.log(data);
   } catch (error) {
     console.log(error);
   }
@@ -176,6 +175,7 @@ const DisplayTable = (Array) => {
     //rating
     let Rating = document.createElement("p");
     Rating.innerHTML = "rating:" + " " + el.rating;
+    Rating.className = "RatingA";
     //price
     let Price = document.createElement("h3");
     Price.className = "Price";
@@ -279,6 +279,16 @@ for (let i = 0; i < CheckBox.length; i++) {
 
 let NewArr = [];
 const FilterFromCheckBox = async (value1) => {
+  let clearecheck = document.getElementById("clearecheck");
+  clearecheck.innerHTML = null;
+  let clearbtn = document.createElement("button");
+  clearbtn.className = "clearbtn";
+  clearecheck.append(clearbtn);
+  clearbtn.innerText = "Clear Filter";
+  clearbtn.onclick = () => {
+    ReloadPage();
+  };
+
   try {
     let response = await fetch(
       `http://localhost:3000/productsData?categories=${value1}`
@@ -287,6 +297,7 @@ const FilterFromCheckBox = async (value1) => {
     for (let j = 0; j < data.length; j++) {
       NewArr.push(data[j]);
     }
+    console.log(value1);
     console.log(NewArr);
     DisplayTable(NewArr);
   } catch (error) {
@@ -296,25 +307,30 @@ const FilterFromCheckBox = async (value1) => {
 
 //this function will call when buy button will be clicked
 let cartArr = [];
- const BuyProduct = async (el) => {
-   // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
-   // cartArr.push(el);
-   // localStorage.setItem("cart_items",JSON.stringify(cartArr))
+const BuyProduct = async (el) => {
+  // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
+  // cartArr.push(el);
+  // localStorage.setItem("cart_items",JSON.stringify(cartArr))
 
-   // console.log(cartArr);
-   let res = await fetch(`http://localhost:3000/cartProducts`, {
-     method: "POST",
-     body: JSON.stringify(el),
+  // console.log(cartArr);
+  let res = await fetch(`http://localhost:3000/cartProducts`, {
+    method: "POST",
+    body: JSON.stringify(el),
+    //hello
+    headers: {
+      "Content-Type": " application/json",
+    },
+  });
 
-     headers: {
-       "Content-Type": " application/json",
-     },
-   });
+  let data = await res.json();
+  console.log("data", data);
+  window.location.href = "products.html";
+};
 
-   let data = await res.json();
-   console.log("data", data);
-   window.location.href = "products.html";
- };
+// claer checked box;
+function ReloadPage() {
+  window.location.reload();
+}
 
 // display pop up on click on select your gift
 
@@ -370,7 +386,22 @@ const ItemsInCart = async () => {
     cartNumber.innerText = data.length;
     console.log(data);
   } catch (error) {
-    console.log("error find",error);
+    console.log("error find", error);
   }
 };
 ItemsInCart();
+
+// let FindFromNav = document.getElementsByClassName("FindProductA");
+
+// let count1 = 0;
+// for (let i = 0; i < FindFromNav.length; i++) {
+//   FindFromNav[i].onclick = function () {
+//     let value2 = FindFromNav[i].innerText;
+//     console.log("value2",value2);
+
+//     // if (CheckBox[i].checked) {
+//     //   FilterFromCheckBox(value1);
+//     //   CheckBox[i].style = "background-color: black;";
+//     // }
+//   };
+// }
