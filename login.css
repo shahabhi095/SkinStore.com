@@ -1,7 +1,7 @@
 #form {
     /* border: 1px solid red; */
     width: 36%;
-    height: 650px;
+    height: 700px;
     /* margin-top: 2%; */
     margin-left: 15%;
     margin-top: 8%;
@@ -10,11 +10,11 @@
 }
 
 /* #div>h4 {
-    font-size: 30%;
-    margin-left: 30px;
+font-size: 30%;
+margin-left: 30px;
 
-    width: 80%;
-    margin-top: 20%;
+width: 80%;
+margin-top: 20%;
 
 } */
 #h4 {
@@ -29,7 +29,7 @@
     width: 80%;
     margin-top: 2%;
     margin-bottom: 2%;
-    height: 30px;
+    height: 50px;
 }
 
 #password {
@@ -37,7 +37,7 @@
     width: 80%;
     margin-top: 2%;
     margin-bottom: 2%;
-    height: 30px;
+    height: 50px;
 }
 
 #labelEamil {
@@ -50,16 +50,6 @@
     width: 80%;
 }
 
-#sign {
-    margin-top: 5%;
-    margin-left: 30px;
-    height: 35px;
-    width: 80%;
-    color: white;
-    background-color: black;
-    font-size: 17px;
-}
-
 #forgetPassword {
     color: grey;
     margin-top: 10%;
@@ -68,9 +58,22 @@
 
 #hr {
     width: 36%;
-    margin-top: -6%;
+    /* border: 1px solid red; */
+    margin-top: -15px;
     margin-left: 30px;
 }
+
+
+#sign {
+    margin-top: 5%;
+    margin-left: 30px;
+    height: 50px;
+    width: 80%;
+    color: white;
+    background-color: black;
+    font-size: 17px;
+}
+
 
 #sign:hover {
     background-color: rgb(0, 255, 242);
@@ -93,6 +96,7 @@
 #divImg {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 5%;
     /* border: 1px solid red; */
 }
 
@@ -124,6 +128,9 @@
     background-color: black;
     color: white;
     font-size: 17px;
+    margin-top: 10%;
+    /* padding-top: 20px; */
+
 }
 
 #register:hover {

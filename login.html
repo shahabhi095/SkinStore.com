@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <style>
-
 </style>
 
 <body>
 
-    <h2>hello</h2>
+
+
+    <div id="header"></div>
 
     <div id="both">
         <form action="" id="form">
@@ -50,13 +52,21 @@
     </div>
 
     <div id="post"></div>
+
+
+
+
+
+
+
 </body>
 
 </html>
 
-<script>
+<script type="module">
 
-
+    import { header } from "./component.js"
+    document.getElementById('header').innerHTML = header()
 
 
     document.getElementById('sign').addEventListener('click', checklogin)
