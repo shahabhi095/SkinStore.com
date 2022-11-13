@@ -11,7 +11,7 @@ let datafromLS;
 let sum = [];
 const cartDataServer = async () => {
     let res = await fetch(`http://localhost:3000/cartProducts`)
-   let data = await res.json();
+    let data = await res.json();
     datafromLS = data
     //console.log(datafromLS)
     append(datafromLS)
@@ -133,14 +133,14 @@ async function removeFun(i) {
 }
 
 const ItemsInCart = async () => {
-  try {
-    let res = await fetch(`http://localhost:3000/cartProducts`);
-    let data = await res.json();
-    let cartNumber = document.getElementById("cart");
-    cartNumber.innerText = data.length;
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
+    try {
+        let res = await fetch(`http://localhost:3000/cartProducts`);
+        let data = await res.json();
+        let cartNumber = document.getElementById("cart");
+        cartNumber.innerText = data.length;
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
 };
 ItemsInCart();
