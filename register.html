@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="register.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +16,7 @@
 
 <body>
 
-
+    <div id="header"></div>
 
     <form action="" id="form">
 
@@ -30,7 +31,9 @@
                 <div id="divFacebook">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eW2_WfINZK4c9_5hwizfu_BW3Krtd9aC2g&usqp=CAU"
                         alt="" id="facebook" facebook>
-                    <p>facebook</p>
+                    <div id='divImg1'>
+                        <p>facebook</p>
+                    </div>
                 </div>
                 <div id="divGoogle">
 
@@ -38,7 +41,9 @@
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSza3ydhaJRRgz6Iq66QZrqHZHax0y781-83oRCRpX893PPiaoyavuE4SrD-9GE6wVupGY&usqp=CAU"
                         alt="" id="google">
-                    <p>Google</p>
+                    <div id="divImg2">
+                        <p>Google</p>
+                    </div>
                 </div>
             </div>
 
@@ -83,7 +88,11 @@
 
     </div>
 
-    <script>
+    <script type="module">
+
+
+        import { header } from "./component.js"
+        document.getElementById('header').innerHTML = header()
 
 
         document.getElementById('sign').addEventListener('click', valid)
