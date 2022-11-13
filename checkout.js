@@ -1,19 +1,11 @@
+// //get data from server
+
 let x = async () => {
-  let res = await fetch("http://localhost:3000/productsData");
+  let res = await fetch("http://localhost:3000/cartProducts");
   let data = await res.json();
-  // console.log(data);
-  order_data(data);
+  append_orderr_summary(data);
 };
 x();
-
-let order_data = (data) => {
-  let arr = [];
-  for (i = 3; i < 10; i++) {
-    arr.push(data[i]);
-  }
-  // console.log(arr);
-  append_orderr_summary(arr);
-};
 
 // append data in order box (right)
 let count = 0;
@@ -61,29 +53,6 @@ let other_order_detail = () => {
   document.getElementById("order_pay").innerText = `$${total + 15}`;
 };
 
-// popup;
-
-let popup = () => {
-  let checkout_btn = document.getElementById("checkout_submit");
-  checkout_btn.onclick = () => {
-    // console.log("hi");
-    GetAddress();
-
-    // window.location.replace = "checkout.html";
-    let popup = document.getElementById("popup");
-    popup.classList.add("open_popup");
-  };
-};
-popup();
-let close_popup = () => {
-  let close = document.getElementById("close_popup");
-  close.onclick = () => {
-    let popup = document.getElementById("popup");
-    popup.classList.remove("open_popup");
-  };
-};
-close_popup();
-
 // address data to object
 let GetAddress = () => {
   let country = document.getElementById("country").value;
@@ -115,6 +84,9 @@ let GetAddress = () => {
   } else {
     let obj = new address(country, f, z, cn, add1, add2, hn, c, s, mn, x);
     send(obj);
+    window.location.href = "popup.html";
+
+    // popup();
   }
 };
 
@@ -140,4 +112,44 @@ let send = async (obj) => {
     body: JSON.stringify(obj),
     headers: { "Content-Type": "application/json" },
   });
+};
+
+// start popup;
+
+// let popup = () => {
+//   let checkout_btn = document.getElementById("checkout_submit");
+//   checkout_btn.onclick = () => {
+//     // console.log("hi");
+//     GetAddress();
+
+//     // window.location.replace = "checkout.html";
+//     let popup = document.getElementById("popup");
+//     popup.classList.add("open_popup");
+//   };
+// };
+// popup();
+
+//2 time
+//2 time
+//2 time
+//2 time
+//2 time
+// let popup = () => {
+//   let popup = document.getElementById("popup");
+//   popup.classList.add("open_popup");
+// };
+// // //close popup
+
+// let close_popup = () => {
+//   let close = document.getElementById("close_popup");
+//   close.onclick = () => {
+//     let popup = document.getElementById("popup");
+//     popup.classList.remove("open_popup");
+//   };
+// };
+// close_popup();
+
+let checkout_btn = document.getElementById("checkout_submit");
+checkout_btn.onclick = () => {
+  GetAddress();
 };
