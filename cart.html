@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
     <link rel="stylesheet" href="cart.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
     <title>Cart</title>
 </head>
 <body>
+    <div id="header"></div>
     <div class="t">
         <h1>Your Cart</h1>
-        <button><p><i class="fa-solid fa-lock"></i> CHECKOUT SECURELY NOW</p></button>
+       <a href="checkout.html"> <button><p><i class="fa-solid fa-lock"></i> CHECKOUT SECURELY NOW</p></button></a>
     </div>
     <div class="row">
         <h5>Items</h5>
@@ -27,13 +33,13 @@
         <p>Cart Subtotal: $<span id="total"></span></p>
     </div>
     <div class="b">
-        <a href="products.html"><button><p>CONTINUE SHOPPING</p></button></a>
-        <button><p><i class="fa-solid fa-lock"></i> CHECKOUT SECURELY NOW</p></button>
+        <a href="index.html"><button><p>CONTINUE SHOPPING</p></button></a>
+      <a href="checkout.html">  <button><p><i class="fa-solid fa-lock"></i> CHECKOUT SECURELY NOW</p></button></a>
     </div>
     
     <img class="bimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJA4dT5RwWMs5eZQD_Zdc6r8ccaZmpH56L2NOKlwPsxmlZaY8drc_HmSuYZMzFkyNUw&usqp=CAU">
-
+<div id="footer"></div>
 </body>
 </html>
 
-<script src="cart.js"></script>
+<script type="module" src="cart.js"></script>

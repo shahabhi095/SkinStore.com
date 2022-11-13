@@ -287,94 +287,170 @@
       "categories": "AHA"
     }
   ],
-
-  "HomeproductsData" : [ 
-    
+  "HomeproductsData": [
     {
-    "id":"a1",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/39/17_1009_CucumberExtract_US17_1009_CucumberExtract_US-014239.jpg",
-  "name": "Corrective Gel",
-  "rating": 4.5,
-  "price":  300,
-  "brand": "SkinCeuticals ",
-  "categories":"SkinCare"
-},
+      "id": "a1",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/39/17_1009_CucumberExtract_US17_1009_CucumberExtract_US-014239.jpg",
+      "name": "Corrective Gel",
+      "rating": 4.5,
+      "price": 300,
+      "brand": "SkinCeuticals ",
+      "categories": "SkinCare"
+    },
     {
-    "id":"a2",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/39/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot8-600x600-063639.png",
-  "name": "Super Food",
-  "rating": 4,
-  "price":  350,
-  "brand": "Elmis ",
-  "categories":"Makeup"
-},
+      "id": "a2",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/39/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot8-600x600-063639.png",
+      "name": "Super Food",
+      "rating": 4,
+      "price": 350,
+      "brand": "Elmis ",
+      "categories": "Makeup"
+    },
     {
-    "id":"a3",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/27/SkinStore_Q4_Photography_2022_-_October_-_THG0035163_-_BATCHING_shot8600x600-090227.jpg",
-  "name": "Cream",
-  "rating": 3,
-  "price":  200,
-  "brand": "Obagi Medicals ",
-  "categories":"HairCare"
-},
+      "id": "a3",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/27/SkinStore_Q4_Photography_2022_-_October_-_THG0035163_-_BATCHING_shot8600x600-090227.jpg",
+      "name": "Cream",
+      "rating": 3,
+      "price": 200,
+      "brand": "Obagi Medicals ",
+      "categories": "HairCare"
+    },
     {
-    "id":"a4",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/10/0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_14-600x600-091010.jpg",
-  "name": "Preparation Gel",
-  "rating": 5,
-  "price":  500,
-  "brand": "Tripolor",
-  "categories":"SkinCare"
-},
+      "id": "a4",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/10/0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_14-600x600-091010.jpg",
+      "name": "Preparation Gel",
+      "rating": 5,
+      "price": 500,
+      "brand": "Tripolor",
+      "categories": "SkinCare"
+    },
     {
-    "id":"a5",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/42/best_selling-064442.jpg",
-  "name": "Firm Riche",
-  "rating": 3,
-  "price":  100,
-  "brand": "Neocutis",
-  "categories":"Makeup"
-},
+      "id": "a5",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/42/best_selling-064442.jpg",
+      "name": "Firm Riche",
+      "rating": 3,
+      "price": 100,
+      "brand": "Neocutis",
+      "categories": "Makeup"
+    },
     {
-    "id":"a6",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/54/original-original-original-500x500-085431-083903-064454.jpg",
-  "name": "Lumere",
-  "rating": 1,
-  "price":  800,
-  "brand": "Robin",
-  "categories":"HairCare"
-},
+      "id": "a6",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/54/original-original-original-500x500-085431-083903-064454.jpg",
+      "name": "Lumere",
+      "rating": 1,
+      "price": 800,
+      "brand": "Robin",
+      "categories": "HairCare"
+    },
     {
-    "id":"a7",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/28/original-Screenshot_2022-03-07_141739-065628.png",
-  "name": "Cleanser",
-  "rating": 5.5,
-  "price":  250,
-  "brand": "Estee louder",
-  "categories":"selfCare"
-},
+      "id": "a7",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/28/original-Screenshot_2022-03-07_141739-065628.png",
+      "name": "Cleanser",
+      "rating": 5.5,
+      "price": 250,
+      "brand": "Estee louder",
+      "categories": "selfCare"
+    },
     {
-    "id":"a8",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/34/original-dhc.ss-061734.jpg",
-  "name": "Face Wash",
-  "rating": 5,
-  "price":  600,
-  "brand": "DHC",
-  "categories":"Bath&Body"
-},
+      "id": "a8",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/34/original-dhc.ss-061734.jpg",
+      "name": "Face Wash",
+      "rating": 5,
+      "price": 600,
+      "brand": "DHC",
+      "categories": "Bath&Body"
+    },
     {
-    "id":"a9",
-  "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/23/original-perricone.ss-013423.jpg",
-  "name": "Hair Gel",
-  "rating": 3.8,
-  "price":  180,
-  "brand": "Periccon MD",
-  "categories":"SelfCare"
+      "id": "a9",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/23/original-perricone.ss-013423.jpg",
+      "name": "Hair Gel",
+      "rating": 3.8,
+      "price": 180,
+      "brand": "Periccon MD",
+      "categories": "SelfCare"
+    }
+  ],
+  "address": [
+    {
+      "country": "INDIA",
+      "fullname": "Shivam Chaudhary",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "87",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "7275262500",
+      "id": 1
+    },
+    {
+      "country": "INDIA",
+      "fullname": "Shivam Chaudhary",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "787",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "07275262500",
+      "orderno": 86706,
+      "id": 2
+    },
+    {
+      "country": "INDIA",
+      "fullname": "Shivani Singh",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "444",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "07275262500",
+      "orderno": 96225,
+      "id": 3
+    }
+  ],
+  "cartProducts": [
+    {
+      "id": "a2",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/39/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot8-600x600-063639.png",
+      "name": "Super Food",
+      "rating": 4,
+      "price": 350,
+      "brand": "Elmis ",
+      "categories": "Makeup"
+    },
+    {
+      "id": "a4",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/10/0224-STDCRE-32153-SS-BME-Skinstore-March-2022-Photography-Batching-Shot_14-600x600-091010.jpg",
+      "name": "Preparation Gel",
+      "rating": 5,
+      "price": 500,
+      "brand": "Tripolor",
+      "categories": "SkinCare"
+    },
+    {
+      "id": "a1",
+      "image1": "https://static.thcdn.com/images/small/webp/widgets/121-us/39/17_1009_CucumberExtract_US17_1009_CucumberExtract_US-014239.jpg",
+      "name": "Corrective Gel",
+      "rating": 4.5,
+      "price": 300,
+      "brand": "SkinCeuticals ",
+      "categories": "SkinCare"
+    },
+    {
+      "id": "1",
+      "image1": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-2844930071318699.jpg",
+      "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-1514932677894190.jpg",
+      "name": "Brightening Treatment",
+      "rating": "4.5",
+      "price": "105",
+      "  brand": "SkinCeuticals",
+      "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
+      "categories": "SkinCeuticals "
+    }
+  ]
 }
-]
-
-
-
-}
-
-
