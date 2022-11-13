@@ -1,3 +1,9 @@
+//header & footer
+
+import { header, footer } from "./component.js";
+document.getElementById("header").innerHTML = header();
+document.getElementById("footer").innerHTML = footer();
+
 // get address from server
 
 let getorderdetails = async () => {
@@ -31,22 +37,31 @@ let appendAddress = (data) => {
 // sample data from db.jspn
 // sample data from db.jspn
 // sample data from db.jspn
+// let x = async () => {
+//   let res = await fetch("http://localhost:3000/productsData");
+//   let data = await res.json();
+//   // console.log(data);
+//   order_data(data);
+// };
+// x();
+
+// let order_data = (data) => {
+//   let arr = [];
+//   for (i = 3; i < 5; i++) {
+//     arr.push(data[i]);
+//   }
+//   // console.log(arr);
+//   checkoutItems(arr);
+// };
+
 let x = async () => {
-  let res = await fetch("http://localhost:3000/productsData");
+  let res = await fetch("http://localhost:3000/cartProducts");
   let data = await res.json();
   // console.log(data);
-  order_data(data);
+  // order_data(data);
+  checkoutItems(data);
 };
 x();
-
-let order_data = (data) => {
-  let arr = [];
-  for (i = 3; i < 5; i++) {
-    arr.push(data[i]);
-  }
-  // console.log(arr);
-  checkoutItems(arr);
-};
 // get data from cart page
 let count = 0;
 let total = 0;
@@ -73,10 +88,20 @@ let checkoutItems = (data) => {
     price.innerText = el.price;
     total += Number(el.price);
 
+    let cancel_div = document.createElement("div");
+    let cancel_btn = document.createElement("button");
+    cancel_div.className = "cancel_btn";
+    cancel_btn.innerText = "Cancel";
+    //for removing
+    cancel_btn.onclick = () => {
+      removeFun(el.id);
+    };
+
+    cancel_div.append(cancel_btn);
     img_div.append(img);
     name_div.append(name);
     price_div.append(price);
-    card.append(img_div, name_div, price_div);
+    card.append(img_div, name_div, price_div, cancel_div);
     document.getElementById("order_summary_products").append(card);
   });
   document.getElementById("total_item").innerHTML = `Total Item: ${count}`;
@@ -93,3 +118,27 @@ let checkoutItems = (data) => {
 //   }
 
 // }
+
+//delete order or cencel order
+
+async function removeFun(i) {
+  let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  let data = await res.json();
+}
+const ItemsInCart = async () => {
+  try {
+    let res = await fetch(`http://localhost:3000/cartProducts`);
+    let data = await res.json();
+    let cartNumber = document.getElementById("cart");
+    cartNumber.innerText = data.length;
+    console.log(data);
+  } catch (error) {
+    console.log("error find", error);
+  }
+};
+ItemsInCart();

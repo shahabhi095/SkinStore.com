@@ -88,11 +88,16 @@ ol.progtrckr li.progtrckr-todo:before {
 /* order status  ends*/
 
 /* address_container */
-
+#h22 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 #address_container {
   border: 0px solid black;
   display: flex;
   width: 70%;
+  height: 200px;
   margin: auto;
   justify-content: space-between;
   background-color: white;
@@ -102,6 +107,7 @@ ol.progtrckr li.progtrckr-todo:before {
 #client_address {
   border: 0px solid pink;
   width: 70%;
+  height: auto;
 }
 #totalinfo {
   border: 0px solid black;
@@ -111,19 +117,30 @@ ol.progtrckr li.progtrckr-todo:before {
   text-align: center;
   align-items: center;
   height: 150px;
-  margin-top: 12%;
+  margin-top: 6%;
 }
 #total_item {
-  border: 0px solid black;
+  width: 30%;
+  margin: auto;
+  height: 20px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
 #total_price {
-  border: 0px solid black;
+  width: 30%;
+  margin: auto;
+  height: 20px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
 
-#client_house_no {
-  margin-top: -2%;
+#client_name {
+  margin-top: 1%;
 }
-#client_house_area1 {
+#client_mobile_no {
+  margin-top: 1%;
+}
+/* #client_house_area1 {
   margin-top: -2%;
 }
 #client_house_area2 {
@@ -140,7 +157,7 @@ ol.progtrckr li.progtrckr-todo:before {
 }
 #client_mobile_no {
   margin-top: -1%;
-}
+} */
 /* {
     "country": "INDIA",
     "fullname": "Shivam Chaudhary",
@@ -174,7 +191,7 @@ ol.progtrckr li.progtrckr-todo:before {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .img_div {
-  width: 33.33%;
+  width: 25%;
   border: 0px solid red;
   text-align: center;
 }
@@ -183,7 +200,7 @@ ol.progtrckr li.progtrckr-todo:before {
 }
 .name_div {
   border: 0px solid red;
-  width: 33.33%;
+  width: 25%;
   display: flex;
   text-align: center;
   align-items: center;
@@ -191,10 +208,30 @@ ol.progtrckr li.progtrckr-todo:before {
 }
 .price_div {
   border: 0px solid red;
-  width: 33.33%;
+  width: 25%;
   text-align: center;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+.cancel_btn {
+  border: 0px solid red;
+  width: 25%;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.cancel_btn button {
+  background-color: #c48832;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cancel_btn button:hover {
+  background-color: red;
+  cursor: pointer;
 }
