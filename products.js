@@ -272,7 +272,7 @@ for (let i = 0; i < CheckBox.length; i++) {
 
     if (CheckBox[i].checked) {
       FilterFromCheckBox(value1);
-      CheckBox[i].style = " background-color: black;";
+      CheckBox[i].style = "background-color: black;";
     }
   };
 }
@@ -370,7 +370,7 @@ const ItemsInCart = async () => {
     cartNumber.innerText = data.length;
     console.log(data);
   } catch (error) {
-    console.log(error);
+    console.log("error",error);
   }
 };
 ItemsInCart();
