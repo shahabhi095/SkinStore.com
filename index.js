@@ -221,44 +221,44 @@ productsInfo.innerHTML =null;
 // appendData();
 
 
-//  const mybtn1 = async(el)=>{
-// // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
-// // cartArr.push(el);
-// // localStorage.setItem("cart_items",JSON.stringify(cartArr))
+ const mybtn1 = async(el)=>{
+// let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
+// cartArr.push(el);
+// localStorage.setItem("cart_items",JSON.stringify(cartArr))
 
-// // console.log(cartArr);
-// let res = await fetch(`http://localhost:3000/cartProducts`, {
-//   method: "POST",
-//   body: JSON.stringify(el),
+// console.log(cartArr);
+let res = await fetch(`http://localhost:3000/cartProducts`, {
+  method: "POST",
+  body: JSON.stringify(el),
 
-//   headers: {
-//     "Content-Type": " application/json",
-//   },
-// });
+  headers: {
+    "Content-Type": " application/json",
+  },
+});
 
-//   let data = await res.json();
-//   console.log("data", data);
-//    window.location.href = "products.html";
-// }
+  let data = await res.json();
+  console.log("data", data);
+   window.location.href = "products.html";
+}
 // let cartNumber=document.getElementById("cart")
 // cartNumber.innerText=cartArr.length
 
-const mybtn1 = async(el)=>{
-  // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
-  // cartArr.push(el);
-  // localStorage.setItem("cart_items",JSON.stringify(cartArr))
-  // console.log(cartArr);
-  let res = await fetch(`http://localhost:3000/cartProducts`, {
-    method: "POST",
-    body: JSON.stringify(el),
-    headers: {
-      "Content-Type": " application/json",
-    },
-  });
-    let data = await res.json();
-    console.log("data", data);
-     window.location.href = "products.html";
-  }
+// const mybtn1 = async(el)=>{
+//   // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
+//   // cartArr.push(el);
+//   // localStorage.setItem("cart_items",JSON.stringify(cartArr))
+//   // console.log(cartArr);
+//   let res = await fetch(`http://localhost:3000/cartProducts`, {
+//     method: "POST",
+//     body: JSON.stringify(el),
+//     headers: {
+//       "Content-Type": " application/json",
+//     },
+//   });
+//     let data = await res.json();
+//     console.log("data", data);
+//      window.location.href = "products.html";
+//   }
 
  
 
