@@ -1,28 +1,32 @@
 
-// let datafromLS = JSON.parse(localStorage.getItem('addToCart'));
+
 
 import { header, footer } from "./component.js";
 document.getElementById("header").innerHTML = header();
 document.getElementById("footer").innerHTML = footer();
 
 
-
-let datafromLS;
 let sum = [];
-const cartDataServer = async () => {
-    let res = await fetch(`http://localhost:3000/cartProducts`)
-    let data = await res.json();
-    datafromLS = data
-    //console.log(datafromLS)
-    append(datafromLS)
-    datafromLS.forEach((el) => {
+let datafromLS = JSON.parse(localStorage.getItem("cart_items")) || [];
+console.log(datafromLS)
+ let total = document.getElementById("total");
+ total.innerText = grandtotal(sum).toFixed(2);
+
+
+     datafromLS.forEach((el) => {
         sum.push(+el.price)
     })
+// const cartDataServer = async () => {
+//     let res = await fetch(`http://localhost:3000/cartProducts`)
+//     let data = await res.json();
+//     datafromLS = data
+//     //console.log(datafromLS)
+    
 
-    let total = document.getElementById('total')
-    total.innerText = grandtotal(sum).toFixed(2);
-}
-cartDataServer()
+
+   
+// }
+//cartDataServer()
 // console.log(datafromLS)
 //console.log(sum)
 
@@ -30,7 +34,7 @@ cartDataServer()
 let store = document.getElementById('store');
 
 let nsum = grandtotal(sum);
-let total = document.getElementById('total')
+ total = document.getElementById('total')
 total.innerText = nsum.toFixed(2);
 
 const append = (data) => {
@@ -93,7 +97,7 @@ const append = (data) => {
         let remove = document.createElement('span');
         remove.innerHTML = '<i class="fa-solid fa-xmark"></i>';
         remove.addEventListener('click', () => {
-            removeFun(el.id);
+            removeFun(i);
         })
 
         div.append(img, title, price, div2, subtotal, remove);
@@ -101,7 +105,9 @@ const append = (data) => {
     })
 
 }
-// append(datafromLS);
+ append(datafromLS);
+console.log(datafromLS);
+
 
 function grandtotal(s) {
     let nsum = 0;
@@ -111,36 +117,37 @@ function grandtotal(s) {
     return nsum;
 }
 
+ 
+function removeFun(i) {
+    // console.log(i)
 
-async function removeFun(i) {
-    console.log(i)
-
-    let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-    });
-    let data = await res.json();
-    console.log(data);
+    // let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
+    //     method: 'DELETE',
+    //     headers: {
+    //         'Content-Type': 'application/json'
+    //     },
+    // });
+    // let data = await res.json();
+    // console.log(data);
 
 
-    //let data = JSON.parse(localStorage.getItem("addToCart")) || [];
-    //data.splice(i, 1);
-    //localStorage.setItem("addToCart", JSON.stringify(data));
-    // append(data);
-    // window.location.reload();
+
+    datafromLS = JSON.parse(localStorage.getItem("cart_items")) || [];
+    datafromLS.splice(i, 1);
+    localStorage.setItem("cart_items", JSON.stringify(datafromLS));
+    append(datafromLS);
+    window.location.reload();
 }
 
-const ItemsInCart = async () => {
-    try {
-        let res = await fetch(`http://localhost:3000/cartProducts`);
-        let data = await res.json();
-        let cartNumber = document.getElementById("cart");
-        cartNumber.innerText = data.length;
-        console.log(data);
-    } catch (error) {
-        console.log(error);
-    }
-};
-ItemsInCart();
+// const ItemsInCart = async () => {
+//     try {
+//         let res = await fetch(`http://localhost:3000/cartProducts`);
+//         let datafromLS = await res.json();
+//         let cartNumber = document.getElementById("cart");
+//         cartNumber.innerText = data.length;
+//         console.log(data);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// };
+// ItemsInCart();

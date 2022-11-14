@@ -1,4 +1,6 @@
 //header & footer
+let cartArr = JSON.parse(localStorage.getItem("orderplaced")) || [];
+
 
 import { header, footer } from "./component.js";
 document.getElementById("header").innerHTML = header();
@@ -54,19 +56,21 @@ let appendAddress = (data) => {
 //   checkoutItems(arr);
 // };
 
-let x = async () => {
-  let res = await fetch("http://localhost:3000/cartProducts");
-  let data = await res.json();
-  // console.log(data);
-  // order_data(data);
-  checkoutItems(data);
-};
-x();
+// let x = async () => {
+//   let res = await fetch("http://localhost:3000/cartProducts");
+//   let data = await res.json();
+//   // console.log(data);
+//   // order_data(data);
+//   checkoutItems(data);
+// };
+// x();
 // get data from cart page
 let count = 0;
 let total = 0;
 let checkoutItems = (data) => {
-  data.forEach((el) => {
+let order_summary_products = document.getElementById("order_summary_products");
+order_summary_products.innerHTML = null;
+  data.forEach((el,i) => {
     count++;
 
     let card = document.createElement("div");
@@ -94,7 +98,7 @@ let checkoutItems = (data) => {
     cancel_btn.innerText = "Cancel";
     //for removing
     cancel_btn.onclick = () => {
-      removeFun(el.id);
+      removeFun(i);
     };
 
     cancel_div.append(cancel_btn);
@@ -109,7 +113,7 @@ let checkoutItems = (data) => {
 };
 
 //
-
+checkoutItems(cartArr);
 // document.getElementById("btn6").onclick = async ()=>{
 
 //   try{
@@ -121,24 +125,29 @@ let checkoutItems = (data) => {
 
 //delete order or cencel order
 
-async function removeFun(i) {
-  let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  let data = await res.json();
+function removeFun(i) {
+  // let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
+  //   method: "DELETE",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  // });
+  //let data = await res.json();
+     cartArr = JSON.parse(localStorage.getItem("orderplaced")) || [];
+     cartArr.splice(i, 1);
+     localStorage.setItem("orderplaced", JSON.stringify(cartArr));
+    checkoutItems(cartArr);
+     window.location.reload();
 }
-const ItemsInCart = async () => {
-  try {
-    let res = await fetch(`http://localhost:3000/cartProducts`);
-    let data = await res.json();
-    let cartNumber = document.getElementById("cart");
-    cartNumber.innerText = data.length;
-    console.log(data);
-  } catch (error) {
-    console.log("error find", error);
-  }
-};
-ItemsInCart();
+// const ItemsInCart = async () => {
+//   try {
+//     let res = await fetch(`http://localhost:3000/cartProducts`);
+//     let data = await res.json();
+//     let cartNumber = document.getElementById("cart");
+//     cartNumber.innerText = data.length;
+//     console.log(data);
+//   } catch (error) {
+//     console.log("error find", error);
+//   }
+// };
+// ItemsInCart();
