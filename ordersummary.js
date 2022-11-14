@@ -142,3 +142,4 @@ const ItemsInCart = async () => {
   }
 };
 ItemsInCart();
+//addeding
