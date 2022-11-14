@@ -220,26 +220,24 @@ productsInfo.innerHTML =null;
 }
 // appendData();
 
+let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
 
- const mybtn1 = async(el)=>{
-// let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
-// cartArr.push(el);
-// localStorage.setItem("cart_items",JSON.stringify(cartArr))
+let cartNumber=document.getElementById("cart")
+cartNumber.innerText=cartArr.length
 
-// console.log(cartArr);
-let res = await fetch(`http://localhost:3000/cartProducts`, {
-  method: "POST",
-  body: JSON.stringify(el),
 
-  headers: {
-    "Content-Type": " application/json",
-  },
-});
+function mybtn1(el){
+  cartNumber.innerText = null;
+cartArr.push(el);
 
-  let data = await res.json();
-  console.log("data", data);
-   window.location.href = "products.html";
+localStorage.setItem("cart_items", JSON.stringify(cartArr));
+cartNumber.innerText = cartArr.length;
+window.location.href = "./cart.html"
 }
+
+//cartProducts;
+// console.log(cartArr);
+//const mybtn1 = (el)
 // let cartNumber=document.getElementById("cart")
 // cartNumber.innerText=cartArr.length
 
@@ -270,17 +268,17 @@ let res = await fetch(`http://localhost:3000/cartProducts`, {
 // }
 
 
-const ItemsInCart = async ()=>{
-  try{
-let res = await fetch(`http://localhost:3000/cartProducts`);
-let data = await res.json();
-let cartNumber = document.getElementById("cart");
-cartNumber.innerText = data.length;
-console.log(data)
-  }catch(error){
-    console.log(error)
-  }
-}
-ItemsInCart();
+// const ItemsInCart = async ()=>{
+//   try{
+// let res = await fetch(`http://localhost:3000/cartProducts`);
+// let data = await res.json();
+// let cartNumber = document.getElementById("cart");
+// cartNumber.innerText = data.length;
+// console.log(data)
+//   }catch(error){
+//     console.log(error)
+//   }
+// }
+// ItemsInCart();
 
 

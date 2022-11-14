@@ -306,30 +306,40 @@ const FilterFromCheckBox = async (value1) => {
 };
 
 //this function will call when buy button will be clicked
-let cartArr = [];
-const BuyProduct = async (el) => {
-  // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
-  // cartArr.push(el);
-  // localStorage.setItem("cart_items",JSON.stringify(cartArr))
 
-  // console.log(cartArr);
-  let res = await fetch(`http://localhost:3000/cartProducts`, {
-    method: "POST",
-    body: JSON.stringify(el),
-    //hello
-    headers: {
-      "Content-Type": " application/json",
-    },
-  });
+// const BuyProduct = async (el) => {
+//   // let cartArr=JSON.parse(localStorage.getItem("cart_items"))||[]
+//   // cartArr.push(el);
+//   // localStorage.setItem("cart_items",JSON.stringify(cartArr))
 
-  let data = await res.json();
-  console.log("data", data);
-  window.location.href = "products.html";
-};
+//   // console.log(cartArr);
+//   let res = await fetch(`http://localhost:3000/cartProducts`, {
+//     method: "POST",
+//     body: JSON.stringify(el),
+//     //hello
+//     headers: {
+//       "Content-Type": " application/json",
+//     },
+//   });
 
-// claer checked box;
-function ReloadPage() {
-  window.location.reload();
+//   let data = await res.json();
+//   console.log("data", data);
+//   window.location.href = "products.html";
+// };
+
+// // claer checked box;
+// function ReloadPage() {
+//   window.location.reload();
+// }
+let cartArr = JSON.parse(localStorage.getItem("cart_items")) || [];
+let cartNumber = document.getElementById("cart");
+cartNumber.innerText = cartArr.length;
+
+const BuyProduct = (el)=>{
+cartArr.push(el);
+localStorage.setItem("cart_items", JSON.stringify(cartArr));
+cartNumber.innerText = cartArr.length;
+window.location.reload();
 }
 
 // display pop up on click on select your gift
@@ -378,18 +388,18 @@ const SearchProduct = async () => {
 
 // let footer_div = document.getElementById("footer");
 // footer_div.innerHTML = footer();
-const ItemsInCart = async () => {
-  try {
-    let res = await fetch(`http://localhost:3000/cartProducts`);
-    let data = await res.json();
-    let cartNumber = document.getElementById("cart");
-    cartNumber.innerText = data.length;
-    console.log(data);
-  } catch (error) {
-    console.log("error find", error);
-  }
-};
-ItemsInCart();
+// const ItemsInCart = async () => {
+//   try {
+//     let res = await fetch(`http://localhost:3000/cartProducts`);
+//     let data = await res.json();
+//     let cartNumber = document.getElementById("cart");
+//     cartNumber.innerText = data.length;
+//     console.log(data);
+//   } catch (error) {
+//     console.log("error find", error);
+//   }
+// };
+// ItemsInCart();
 
 // let FindFromNav = document.getElementsByClassName("FindProductA");
 

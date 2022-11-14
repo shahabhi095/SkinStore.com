@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SkinCare</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
@@ -14,8 +14,21 @@
         <img src="https://i.ibb.co/9s7FyJx/404-tick.png" alt="404-tick" />
         <h2>Thank You</h2>
         <p>Your Order is Placed Successfully</p>
-        <a href="ordersummaey.html"><button>OK</button></a>
+        <a href="ordersummaey.html"><button id="orderplaced">OK</button></a>
       </div>
     </div>
   </body>
 </html>
+<script>
+let orderplaced = document.getElementById("orderplaced")
+orderplaced.onclick = () =>{
+  orderplacedFun()
+}
+  let cartArr = JSON.parse(localStorage.getItem("cart_items")) || [];
+function orderplacedFun(){
+
+  localStorage.setItem("orderplaced",JSON.stringify(cartArr))
+  console.log(2)
+  localStorage.removeItem('cart_items');
+}
+</script>

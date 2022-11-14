@@ -1,11 +1,14 @@
 // //get data from server
+let cartArr = JSON.parse(localStorage.getItem("cart_items")) || [];
+console.log(cartArr)
 
-let x = async () => {
-  let res = await fetch("http://localhost:3000/cartProducts");
-  let data = await res.json();
-  append_orderr_summary(data);
-};
-x();
+
+// let x = () => {
+//   // let res = await fetch("http://localhost:3000/cartProducts");
+//   // let data = await res.json();
+//   append_orderr_summary(cartArr);
+// };
+// x();
 
 // append data in order box (right)
 let count = 0;
@@ -40,11 +43,11 @@ let append_orderr_summary = (data) => {
     order_container.append(img_div, descripton_div);
     document.getElementById("order_data_card").append(order_container);
   });
-  other_order_detail();
+ 
   // console.log(count);
   // console.log(total);
 };
-
+append_orderr_summary(cartArr);
 let other_order_detail = () => {
   let x = Math.floor(Math.random() * 100001);
   // console.log(x);
@@ -52,6 +55,8 @@ let other_order_detail = () => {
   document.getElementById("item_no").innerText = `${count} items`;
   document.getElementById("order_pay").innerText = `$${total + 15}`;
 };
+
+ other_order_detail();
 
 // address data to object
 let GetAddress = () => {
