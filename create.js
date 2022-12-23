@@ -36,8 +36,7 @@ const createPost = async () => {
 
   }
 
-  let res = await fetch(`http://localhost:3000/productsData`, {
-
+  let res = await fetch(`https://skincare03.onrender.com/productsData`, {
     method: "POST",
     body: JSON.stringify(send_this_data),
     headers: {

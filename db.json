@@ -83,7 +83,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11370307-5484944342267303.jpg",
       "name": "EltaMD Foaming Facial Cleanser",
       "rating": "4.5",
-      "price": "$30.50",
+      "price": "30.50",
       "brand": "elta MD",
       "category": "Cleansers"
     },
@@ -93,7 +93,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11289657-1754876690336179.jpg",
       "name": "SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",
       "rating": "3.0",
-      "price": "$32.00",
+      "price": "32.00",
       "brand": "pionce",
       "category": "Cleansers"
     },
@@ -103,7 +103,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11054487-9844887845241180.jpg",
       "name": "First Aid Beauty Face Cleanser (5 oz.)",
       "rating": "4.0",
-      "price": "$33.00",
+      "price": "33.00",
       "brand": "obegi",
       "category": "Cleansers"
     },
@@ -123,7 +123,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11207443-7744859308052472.jpg",
       "name": "DHC Deep Cleansing Oil (Various Sizes)",
       "rating": "3.4",
-      "price": "$40.00",
+      "price": "40.00",
       "brand": "ReVive",
       "category": "Moisturizers"
     },
@@ -133,7 +133,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11984195-5474815569153559.jpg",
       "name": "Elemis Pro-Collagen Rose Cleansing Balm",
       "rating": "4.2",
-      "price": "$2.0",
+      "price": "2.0",
       "brand": "elta MD",
       "category": "Moisturizers"
     },
@@ -143,7 +143,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12901858-1264864284374214.jpg",
       "name": "DHC Deep Cleansing Oil Medium 4.1 fl. oz.",
       "rating": "4.1",
-      "price": "$50.00",
+      "price": "50.00",
       "brand": "SkinMedical",
       "category": "Moisturizers"
     },
@@ -154,7 +154,7 @@
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "name": "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
       "rating": "3.4",
-      "price": "$120",
+      "price": "120",
       "brand": "epionce",
       "categories": "Moisturizers"
     },
@@ -164,7 +164,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12595833-5934819257059448.jpg",
       "name": "Blotted Lip",
       "rating": "2.3",
-      "price": "$1300",
+      "price": "1300",
       "brand": "glossier",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/christopherobin.gif",
       "category": "Hair Cleansers"
@@ -175,7 +175,7 @@
       "image2": "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-1514932677894190.jpg",
       "name": "Brightening Treatment 1 fl. oz",
       "rating": "4.5",
-      "price": "$40.00",
+      "price": "40.00",
       "brand": "SkinCeuticals",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "categories": "Serums"
@@ -187,7 +187,7 @@
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "name": "SkinCeuticals Physical Eye UV Defense SPF 50",
       "rating": "4",
-      "price": "$30.50",
+      "price": "30.50",
       "brand": "epionce",
       "categories": "Serums"
     },
@@ -198,7 +198,7 @@
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "name": "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
       "rating": "3.4",
-      "price": "$169",
+      "price": "169",
       "brand": "ReVive",
       "categories": "Serums"
     },
@@ -251,7 +251,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11207443-7744859308052472.jpg",
       "name": "DHC Deep Cleansing Oil (Various Sizes)",
       "rating": "3.4",
-      "price": "$40.00",
+      "price": "40.00",
       "brand": "ReVive",
       "category": "AHA"
     },
@@ -261,7 +261,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11984195-5474815569153559.jpg",
       "name": "Elemis Pro-Collagen Rose Cleansing Balm",
       "rating": "4.2",
-      "price": "$2.0",
+      "price": "2.0",
       "brand": "elta MD",
       "category": "AHA"
     },
@@ -271,7 +271,7 @@
       "image2": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12901858-1264864284374214.jpg",
       "name": "DHC Deep Cleansing Oil Medium 4.1 fl. oz.",
       "rating": "4.1",
-      "price": "$50.00",
+      "price": "50.00",
       "brand": "SkinMedical",
       "category": "AHA"
     },
@@ -362,6 +362,17 @@
       "brand": "w3llpeople",
       "brand_imag": "https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinceuticals.gif",
       "category": "powder"
+    },
+    {
+      "id": "asd",
+      "image1": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBgVFRUZGRgZGx0bGxsYGxocIR0hHSMaHx0bGxsdIS0kHx0qHxsbJTcmKi4xNDQ0HSM6Pzo1Pi0zNDEBCwsLEA8QHxISHzUqJCsxNDU1MzEzMzMzMzMzMzM1NTUzMzMzMzMzMzM1NTMzMzMzMzMzMzMzMzMzMzMzMzMzM//AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgQFAgMHAQj/xABAEAABAwIEBAQEAwYFBAIDAAABAAIRAyEEEjFBBVFhcQYigZETMqGxQsHwUnKy0eHxFCNigsIHQ5LSFVMWJDP/xAAaAQADAQEBAQAAAAAAAAAAAAAAAwQCAQUG/8QAJhEAAgICAgICAgMBAQAAAAAAAAECEQMhEjEEQSJRMmETcZEUgf/aAAwDAQACEQMRAD8A7MhCEACEIQAIQhAAhCEAC8QSq7iPFqdEAvddxhov5iOXuuNpdnUm+ixWt9Vo1IHcgJPxPiKo4kDytJj5XW3u4OB+Uj1K1U8ZcHMHTH4nAnkLn1KRLyEukOWB+x0/xDP2h7rMPB0KTqOOGodz+YBw1ALpaDOo+nVb2Vi50y5pAnKS8CNzcXJ7HQ91n/of0d/h/Y2IVHS4iRuIgkzeANiJU6hxFjokgdZEe6bHLFipY5InoXkr1NMAhCEACELEuGkoAyQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgAQhCAPFg94GpVX4i4g6hSD27vaCTsLkn2EJcZx52JqGnThlLRznTnfzA5A+8fRc58RkMblsZMLizWb8QgtbqGnWBoXdd42ST4j4v8dwAgMa4hs7xF412tbn2TdjKbv8NVawS7I4ADsbDquaOgACOQF/T7XkndSZpvSK8ONba9EplaJJm/MC4F7/hIJ0mf5yH4hph0XAyyD+JwFpc4AQACD0PdVTtpg9IknlbbUKw4e",
+      "image2": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBgVFRUZGRgZGx0bGxsYGxocIR0hHSMaHx0bGxsdIS0kHx0qHxsbJTcmKi4xNDQ0HSM6Pzo1Pi0zNDEBCwsLEA8QHxISHzUqJCsxNDU1MzEzMzMzMzMzMzM1NTUzMzMzMzMzMzM1NTMzMzMzMzMzMzMzMzMzMzMzMzMzM//AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgQFAgMHAQj/xABAEAABAwIEBAQEAwYFBAIDAAABAAIRAyEEEjFBBVFhcQYigZETMqGxQsHwUnKy0eHxFCNigsIHQ5LSFVMWJDP/xAAaAQADAQEBAQAAAAAAAAAAAAAAAwQCAQUG/8QAJhEAAgICAgICAgMBAQAAAAAAAAECEQMhEjEEQSJRMmETcZEUgf/aAAwDAQACEQMRAD8A7MhCEACEIQAIQhAAhCEAC8QSq7iPFqdEAvddxhov5iOXuuNpdnUm+ixWt9Vo1IHcgJPxPiKo4kDytJj5XW3u4OB+Uj1K1U8ZcHMHTH4nAnkLn1KRLyEukOWB+x0/xDP2h7rMPB0KTqOOGodz+YBw1ALpaDOo+nVb2Vi50y5pAnKS8CNzcXJ7HQ91n/of0d/h/Y2IVHS4iRuIgkzeANiJU6hxFjokgdZEe6bHLFipY5InoXkr1NMAhCEACELEuGkoAyQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgAQhCAPFg94GpVX4i4g6hSD27vaCTsLkn2EJcZx52JqGnThlLRznTnfzA5A+8fRc58RkMblsZMLizWb8QgtbqGnWBoXdd42ST4j4v8dwAgMa4hs7xF412tbn2TdjKbv8NVawS7I4ADsbDquaOgACOQF/T7XkndSZpvSK8ONba9EplaJJm/MC4F7/hIJ0mf5yH4hph0XAyyD+JwFpc4AQACD0PdVTtpg9IknlbbUKw4e",
+      "name": "asdd",
+      "rating": "1",
+      "price": "1",
+      "brand": "1",
+      "brand_imag": "1",
+      "category": "1"
     }
   ],
   "address": [
@@ -377,8 +388,77 @@
       "state": "Uttar Pradesh",
       "mobileno": "7275262500",
       "id": 1
+    },
+    {
+      "country": "INDIA",
+      "fullname": "Shivam Chaudhary",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "111",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "07275262500\"",
+      "orderno": 29565,
+      "id": 2
+    },
+    {
+      "country": "INDIA",
+      "fullname": "Shivam Chaudhary",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "111",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "07275262500",
+      "orderno": 42124,
+      "id": 3
+    },
+    {
+      "country": "INDIA",
+      "fullname": "Shivam Chaudhary",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "11",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "07275262500",
+      "orderno": 41409,
+      "id": 4
+    },
+    {
+      "country": "INDIA",
+      "fullname": "Shivam Chaudhary",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "111",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "07275262500",
+      "orderno": 4198,
+      "id": 5
+    },
+    {
+      "country": "INDIA",
+      "fullname": "Shivam Chaudhary",
+      "zipcode": "226005",
+      "companyname": "NA",
+      "address1": "566/87 Jai Prakash Nagar",
+      "address2": "Alambagh",
+      "houseno": "111",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "mobileno": "07275262500",
+      "orderno": 54798,
+      "id": 6
     }
-   
   ],
   "cartProducts": [
     {

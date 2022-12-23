@@ -4,7 +4,7 @@ console.log(cartArr)
 
 
 // let x = () => {
-//   // let res = await fetch("http://localhost:3000/cartProducts");
+//   // let res = await fetch("https://skincare03.onrender.com/cartProducts");
 //   // let data = await res.json();
 //   append_orderr_summary(cartArr);
 // };
@@ -112,7 +112,7 @@ function address(country, f, z, cn, add1, add2, hn, c, s, mn, x) {
 // data send to server
 
 let send = async (obj) => {
-  let res = await fetch("http://localhost:3000/address", {
+  let res = await fetch("https://skincare03.onrender.com/address", {
     method: "POST",
     body: JSON.stringify(obj),
     headers: { "Content-Type": "application/json" },

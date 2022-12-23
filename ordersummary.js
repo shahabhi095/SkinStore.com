@@ -9,7 +9,7 @@ document.getElementById("footer").innerHTML = footer();
 // get address from server
 
 let getorderdetails = async () => {
-  let res = await fetch("http://localhost:3000/address");
+  let res = await fetch("https://skincare03.onrender.com/address");
   let data = await res.json();
   console.log(data);
   appendAddress(data);
@@ -40,7 +40,7 @@ let appendAddress = (data) => {
 // sample data from db.jspn
 // sample data from db.jspn
 // let x = async () => {
-//   let res = await fetch("http://localhost:3000/productsData");
+//   let res = await fetch("https://skincare03.onrender.com/productsData");
 //   let data = await res.json();
 //   // console.log(data);
 //   order_data(data);
@@ -57,7 +57,7 @@ let appendAddress = (data) => {
 // };
 
 // let x = async () => {
-//   let res = await fetch("http://localhost:3000/cartProducts");
+//   let res = await fetch("https://skincare03.onrender.com/cartProducts");
 //   let data = await res.json();
 //   // console.log(data);
 //   // order_data(data);
@@ -126,7 +126,7 @@ checkoutItems(cartArr);
 //delete order or cencel order
 
 function removeFun(i) {
-  // let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
+  // let res = await fetch(`https://skincare03.onrender.com/cartProducts/${i}`, {
   //   method: "DELETE",
   //   headers: {
   //     "Content-Type": "application/json",
@@ -141,7 +141,7 @@ function removeFun(i) {
 }
 // const ItemsInCart = async () => {
 //   try {
-//     let res = await fetch(`http://localhost:3000/cartProducts`);
+//     let res = await fetch(`https://skincare03.onrender.com/cartProducts`);
 //     let data = await res.json();
 //     let cartNumber = document.getElementById("cart");
 //     cartNumber.innerText = data.length;

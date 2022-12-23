@@ -17,7 +17,7 @@ console.log(datafromLS)
         sum.push(+el.price)
     })
 // const cartDataServer = async () => {
-//     let res = await fetch(`http://localhost:3000/cartProducts`)
+//     let res = await fetch(`https://skincare03.onrender.com/cartProducts`)
 //     let data = await res.json();
 //     datafromLS = data
 //     //console.log(datafromLS)
@@ -121,7 +121,7 @@ function grandtotal(s) {
 function removeFun(i) {
     // console.log(i)
 
-    // let res = await fetch(`http://localhost:3000/cartProducts/${i}`, {
+    // let res = await fetch(`https://skincare03.onrender.com/cartProducts/${i}`, {
     //     method: 'DELETE',
     //     headers: {
     //         'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ function removeFun(i) {
 
 // const ItemsInCart = async () => {
 //     try {
-//         let res = await fetch(`http://localhost:3000/cartProducts`);
+//         let res = await fetch(`https://skincare03.onrender.com/cartProducts`);
 //         let datafromLS = await res.json();
 //         let cartNumber = document.getElementById("cart");
 //         cartNumber.innerText = data.length;

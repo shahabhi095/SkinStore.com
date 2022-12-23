@@ -145,7 +145,7 @@ const SearchProduct = async () => {
   let SearchValue = document.getElementById("srch").value;
   try {
     let res = await fetch(
-      `http://localhost:3000/productsData?q=${SearchValue}`
+      `https://skincare03.onrender.com/productsData?q=${SearchValue}`
     );
     let data = await res.json();
     console.log(data);
@@ -157,7 +157,7 @@ const SearchProduct = async () => {
 
 const pData =async()=>{
 try{
-let res = await fetch(` http://localhost:3000/HomeproductsData`)
+let res = await fetch(` https://skincare03.onrender.com/HomeproductsData`)
 let data = await res.json()
 let arrmin=[]
 for(let i=0;i<9;i++){
@@ -246,7 +246,7 @@ window.location.href = "./cart.html"
 //   // cartArr.push(el);
 //   // localStorage.setItem("cart_items",JSON.stringify(cartArr))
 //   // console.log(cartArr);
-//   let res = await fetch(`http://localhost:3000/cartProducts`, {
+//   let res = await fetch(`https://skincare03.onrender.com/cartProducts`, {
 //     method: "POST",
 //     body: JSON.stringify(el),
 //     headers: {
@@ -270,7 +270,7 @@ window.location.href = "./cart.html"
 
 // const ItemsInCart = async ()=>{
 //   try{
-// let res = await fetch(`http://localhost:3000/cartProducts`);
+// let res = await fetch(`https://skincare03.onrender.com/cartProducts`);
 // let data = await res.json();
 // let cartNumber = document.getElementById("cart");
 // cartNumber.innerText = data.length;

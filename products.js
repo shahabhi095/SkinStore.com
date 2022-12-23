@@ -112,7 +112,7 @@ let productsData = [
 let A = 0;
 const productData = async () => {
   try {
-    let response = await fetch("http://localhost:3000/productsData");
+    let response = await fetch("https://skincare03.onrender.com/productsData");
 
     let data = await response.json();
     A = data;
@@ -204,7 +204,7 @@ filter.addEventListener("click", function () {
 const filterData = async () => {
   try {
     let response = await fetch(
-      `http://localhost:3000/productsData?categories=Cleansers`
+      `https://skincare03.onrender.com/productsData?categories=Cleansers`
     );
     let data = await response.json();
 
@@ -225,36 +225,36 @@ const SortByRelevance = async () => {
   let value = SortData.value;
 
   if (value == "") {
-    let res = await fetch(`http://localhost:3000/productsData`);
+    let res = await fetch(`https://skincare03.onrender.com/productsData`);
     let data = await res.json();
     DisplayTable(data);
   } else if (value == "Popularity") {
     let res = await fetch(
-      `http://localhost:3000/productsData?_sort=rating&_order=desc`
+      `https://skincare03.onrender.com/productsData?_sort=rating&_order=desc`
     );
     let data = await res.json();
     DisplayTable(data);
   } else if (value == "Lowtohigh") {
     let res = await fetch(
-      `http://localhost:3000/productsData?_sort=price&_order=asc`
+      `https://skincare03.onrender.com/productsData?_sort=price&_order=asc`
     );
     let data = await res.json();
     DisplayTable(data);
   } else if (value == "hightoLow") {
     let res = await fetch(
-      `http://localhost:3000/productsData?_sort=price&_order=desc`
+      `https://skincare03.onrender.com/productsData?_sort=price&_order=desc`
     );
     let data = await res.json();
     DisplayTable(data);
   } else if (value == "A-Z") {
     let res = await fetch(
-      `http://localhost:3000/productsData?_sort=name&_order=asc`
+      `https://skincare03.onrender.com/productsData?_sort=name&_order=asc`
     );
     let data = await res.json();
     DisplayTable(data);
   } else if (value == "Z-A") {
     let res = await fetch(
-      `http://localhost:3000/productsData?_sort=name&_order=desc`
+      `https://skincare03.onrender.com/productsData?_sort=name&_order=desc`
     );
     let data = await res.json();
     DisplayTable(data);
@@ -291,7 +291,7 @@ const FilterFromCheckBox = async (value1) => {
 
   try {
     let response = await fetch(
-      `http://localhost:3000/productsData?categories=${value1}`
+      `https://skincare03.onrender.com/productsData?categories=${value1}`
     );
     let data = await response.json();
     for (let j = 0; j < data.length; j++) {
@@ -313,7 +313,7 @@ const FilterFromCheckBox = async (value1) => {
 //   // localStorage.setItem("cart_items",JSON.stringify(cartArr))
 
 //   // console.log(cartArr);
-//   let res = await fetch(`http://localhost:3000/cartProducts`, {
+//   let res = await fetch(`https://skincare03.onrender.com/cartProducts`, {
 //     method: "POST",
 //     body: JSON.stringify(el),
 //     //hello
@@ -375,7 +375,7 @@ const SearchProduct = async () => {
   let SearchValue = document.getElementById("srch").value;
   try {
     let res = await fetch(
-      `http://localhost:3000/productsData?q=${SearchValue}`
+      `https://skincare03.onrender.com/productsData?q=${SearchValue}`
     );
     let data = await res.json();
     DisplayTable(data);
@@ -390,7 +390,7 @@ const SearchProduct = async () => {
 // footer_div.innerHTML = footer();
 // const ItemsInCart = async () => {
 //   try {
-//     let res = await fetch(`http://localhost:3000/cartProducts`);
+//     let res = await fetch(`https://skincare03.onrender.com/cartProducts`);
 //     let data = await res.json();
 //     let cartNumber = document.getElementById("cart");
 //     cartNumber.innerText = data.length;
