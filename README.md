@@ -13,8 +13,9 @@
 - Ahan Solanky
 <br/>
 
-<p>Original website link:![SkinStore](https://www.skinstore.com/) </p>
-<p>Link of our deployed project:![SkinStore](https://heroic-gumdrop-b7fa02.netlify.app/) </p>
+Original website link: https://www.skinstore.com/
+<br/>
+Link of our deployed project: https://heroic-gumdrop-b7fa02.netlify.app/ 
 <br/>
 
 ## Tech Stack and Features
