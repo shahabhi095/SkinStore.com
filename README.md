@@ -10,7 +10,7 @@
 - Prajwal HG
 - Shivam Chaudhary
 - Himanshu Sukla
-- Ahan Solanky
+- Aahan Solanki
 <br/>
 
 Original website link: https://www.skinstore.com/
