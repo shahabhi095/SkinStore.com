@@ -4,7 +4,7 @@
 </p>
 
 <br/>
-<p>This was a collaborative project made by 3 members Executed in 5 days.</p>
+<p>This was a collaborative project made by 5 members Executed in 5 days.</p>
 
 - Abhinandan Kumar (Team Lead)
 - Prajwal HG
