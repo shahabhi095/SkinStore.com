@@ -32,6 +32,7 @@ Link of our deployed project: https://heroic-gumdrop-b7fa02.netlify.app/
 - Account Page:- User authentication using local storage.
 - Product Page:- It has sorting & filtering functionality.
 - Cart Page :- Dyanamic cart
+- Checkout Page :- It ha remove functionality
 
 
 ### Glimpse and screenshots of our cloned website:
