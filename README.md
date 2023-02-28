@@ -15,7 +15,9 @@
 
 Original website link: https://www.skinstore.com/
 <br/>
-Link of our deployed project: https://heroic-gumdrop-b7fa02.netlify.app/ 
+Link of our deployed project
+Netlify: https://heroic-gumdrop-b7fa02.netlify.app/ 
+Vercel: https://skinstore-lemon.vercel.app/
 <br/>
 
 ## Tech Stack and Features
